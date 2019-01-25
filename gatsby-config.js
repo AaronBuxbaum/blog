@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Psuedorandom`,
+    title: `Pseudorandom`,
     author: `Aaron Buxbaum`,
     description: `My personal blog for programming stuff`,
     siteUrl: `https://www.aaronbuxbaum.com/`,
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Psuedorandom`,
+        name: `Pseudorandom`,
         short_name: `null`,
         start_url: `/`,
         background_color: `#ffffff`,

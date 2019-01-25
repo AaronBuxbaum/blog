@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "private": true,
-  "description": "Psuedorandom",
+  "description": "Pseudorandom",
   "version": "0.1.0",
   "author": "Aaron Buxbaum <me@aaronbuxbaum.com>",
   "dependencies": {
