@@ -1,7 +1,7 @@
 {
-  "name": "aaron-buxbaum-blog",
+  "name": "blog",
   "private": true,
-  "description": "My blog",
+  "description": "Psuedorandom",
   "version": "0.1.0",
   "author": "Aaron Buxbaum <me@aaronbuxbaum.com>",
   "dependencies": {
@@ -39,12 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/aaronbuxbaum/blog.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "start": "npm run develop",

@@ -3,7 +3,7 @@ title: Code Smells
 date: '2015-05-01T22:12:03.284Z'
 ---
 
-> _Code smells_ are patterns indicate a potential problem with a section of code. While the code typically does actually _work_, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided.
+_Code smells_ are patterns indicate a potential problem with a section of code. While the code typically does actually _work_, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided.
 
 > The following is reference of code smells from Martin Fowler's _Refactoring_ and Robert Martin's _Clean Code_.
 
