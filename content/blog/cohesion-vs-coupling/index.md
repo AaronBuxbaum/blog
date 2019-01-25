@@ -13,6 +13,8 @@ Modules with high cohesion tend to be preferable. High cohesion is associated wi
 
 > A module has high cohesion when everything belongs together and everything is focused on one task.
 
+&nbsp;
+
 **Coupling** represents the degree of interdependence between modules. In other words, two modules have high coupling if they are closely connected or have a strong relationship to each other. For example, if a component is tightly tied to a certain API, it may be a major project when that API is updated or the design changes to a different system. A system with low coupling would mean that such transitions are much easier and safer.
 
 Modules with low coupling tend to be preferable. Low coupling is often a sign of a well-structured computer system and a good design, and when combined with high cohesion, supports the general goals of high readability and maintainability.

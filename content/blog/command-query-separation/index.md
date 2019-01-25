@@ -10,13 +10,15 @@ It states that all functions should fall into one of two categories (but not bo
 1. **Command**: changes the state of the system but does not return a value
 2. **Query**: returns a value, but does not change the state of the system
 
+&nbsp;
+
 > "Asking a question should not change the answer."
 
 In other words, a function that does something to the state of the application should not have a return value.
 
- 
-
 Creating a function which _calls_ a command and a query is not a violation of this concept, though it should not have a return value (since anything that wraps a command is also a command).
+
+&nbsp;
 
 There are a few main reasons why this separation is valuable:
 
