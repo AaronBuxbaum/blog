@@ -28,11 +28,11 @@ In general, prefer false negatives to false positives – in other words, if th
 #### Authoring
 - Be respectful of your reviewers' time!
     - Before you post, do a review of your own and check that everything looks right.
+    - Don't submit anything that isn't already complete and tested. You should be very confident that it will pass review with no comments.
     - Spend extra time to make the PR right the first time around.
     - The more times adjustments are needed, the more time is wasted by additional review and context switching. If there are suggestions, make sure you test and assure quality of your work before asking for another review.
-- Make small PRs so that they are easy to review
+- Make small PRs so that they are easy to review.
+- Make the code "immutable" -- in other words, any single commit should be safely revertable.
 - When you receive a comment, you can:
     - Continue the discussion, in which case you respond to the comment and ping the person or wait for a response. In some cases, you can resolve the ticket if you feel like your response closes the subject, but it's good practice to let the reviewer know in case they're not satisfied.
     - Do the suggested change – when done and pushed, you can resolve the comment. If you did exactly what the comment suggested, you can close it without a response, though adding one is good practice. NOTE: resolving is _only_ for completing the comment in some way. Do not just resolve a comment and not make any change or any response. The entire point of the system is to have records and accountability.
-
-Similarly to reviewers, be respectful of your reviewers' time. Only submit a PR when it is complete, tested, and working.
