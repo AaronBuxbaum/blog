@@ -3,9 +3,11 @@ title: Code Smells
 date: '2015-05-01T22:12:03.284Z'
 ---
 
-_Code smells_ are patterns indicate a potential problem with a section of code. While the code typically does actually _work_, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided.
+_Code smells_ are patterns indicate a potential problem with a section of code. While the associated code typically does actually _work_, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided. If the smelly code turns out to be necessary, it should be refactored so it's as clear as possible, and as a last resort, commented.
 
-> The following is reference of code smells from Martin Fowler's _Refactoring_ and Robert Martin's _Clean Code_.
+Because these indicate where problems are, a good programmer will read these carefully and keep them in mind as they code.
+
+The following is reference of code smells from Martin Fowler's _Refactoring_ and Robert Martin's _Clean Code_.
 
 ### Comments
 
@@ -86,3 +88,6 @@ _Code smells_ are patterns indicate a potential problem with a section of code. 
 7. Patterns of Failure Are Revealing: Test cases ordered well will reveal patterns of failure.
 8. Test Coverage Patterns Can Be Revealing: Similarly, look at the code that is or is not passed in a failure.
 9. Tests Should Be Fast: Slow tests won't get run.
+
+
+ I'm pretty sure I borrowed this list from somewhere, but I can't find the source anymore -- email me for credit if it's yours.

@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Psuedorandom`,
     author: `Aaron Buxbaum`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://aaronbuxbaum.com/`,
+    description: `My personal blog for programming stuff`,
+    siteUrl: `https://www.aaronbuxbaum.com/`,
     social: {
       linkedin: `aaronbuxbaum`,
       github: 'aaronbuxbaum',
@@ -52,7 +52,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         anonymize: false,
-        head: true,
         respectDNT: false,
         trackingId: `UA-133298317-1`,
       },
@@ -61,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Psuedorandom`,
+        short_name: `null`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
