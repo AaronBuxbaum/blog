@@ -51,7 +51,8 @@ Be pedantic! Break down your functions so that they actually do one thing, and b
 
 ### How many arguments should a function take?
 
-0 is best; then 1; then 2. There should be very few cases where you need 3, and no cases where you need more than 3.
+0 is best; then 1; then 2.
+There should be very few cases where you need 3, and no cases where you need more than 3.
 
 Passing an object is not cheating, as long as the object attributes are intentionally tightly coupled. In other words, to pass values by object, you have to know that they cohesively belong together and will not need to be split apart or used in a different context.
 
@@ -64,7 +65,6 @@ You should not write tests for every function. Tests should only be written for 
 > See [Testing](/testing) and [Test-Driven Development](/test-driven-development) for more information.
 
 ### Assorted Points
-
 - Avoid boolean arguments! You actually want two separate functions.
 - Object arguments are fine, as long as the attributes of that object are intentionally tightly coupled.
 - Error handling itself does count as “one thing”.
