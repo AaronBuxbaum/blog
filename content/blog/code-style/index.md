@@ -1,6 +1,6 @@
 ---
 title: Code Style
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 ![xkcd](https://imgs.xkcd.com/comics/code_quality_2x.png "via xkcd")

@@ -1,6 +1,6 @@
 ---
 title: Code Review
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 Code Review is a great way to ensure that code that goes in is high-quality. A lot of value here isn't from the review itself, it's from the fact that developers know that they need to send the code past others.

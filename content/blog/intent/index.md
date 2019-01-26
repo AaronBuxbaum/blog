@@ -1,6 +1,6 @@
 ---
 title: Intent
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."

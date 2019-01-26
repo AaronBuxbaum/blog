@@ -1,6 +1,6 @@
 ---
 title: Container/Presentation Separation
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 Container/Presentation Separation is a mode of organizing front-end functionality so that changes are easier to adapt to and testing is easier.

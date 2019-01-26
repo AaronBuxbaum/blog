@@ -1,6 +1,6 @@
 ---
 title: Comments
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 Comments are a useful, but often abused, tool.

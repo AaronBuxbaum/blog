@@ -1,6 +1,6 @@
 ---
 title: Five-Point System
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 The "Five Point System" is a way to organize explicit work towards refactoring React code into best practices. While all _new_ work should already be up to snuff, sometimes you need to create tickets that tell developers how to get the existing code into a good place. This is a good place to start. Investment in best practices requires more initial investment, but the result will have less bugs and be more future-proof. Over time, this will result in higher and more consistent throughput, and higher developer satisfaction.

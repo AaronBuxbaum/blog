@@ -1,6 +1,6 @@
 ---
 title: Code Smells
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 _Code smells_ are patterns indicate a potential problem with a section of code. While the associated code typically does actually _work_, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided. If the smelly code turns out to be necessary, it should be refactored so it's as clear as possible, and as a last resort, commented.

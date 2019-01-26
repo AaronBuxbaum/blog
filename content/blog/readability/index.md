@@ -1,6 +1,6 @@
 ---
 title: Readability
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 Readability is a system internal at Google that I brought over to Jet for great effect. It's a system for ensuring that code quality stays high and consistent with standards, while simultaneously maintaining effective business decisions and encouraging tech excellence.

@@ -1,6 +1,6 @@
 ---
 title: Fixing Component Speed
-date: '2015-05-01T22:12:03.284Z'
+date: '2019-01-26T22:12:03.284Z'
 ---
 
 ![flow chart](flowchart.png "If you really have to distill it down...")
