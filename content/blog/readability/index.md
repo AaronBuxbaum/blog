@@ -3,41 +3,37 @@ title: Readability
 date: '2015-05-01T22:12:03.284Z'
 ---
 
-Readability is a system that ensures that code quality stays high and consistent with our standards, while simultaneously maintaining effective business decisions and encouraging tech excellence.
+Readability is a system internal at Google that I brought over to Jet for great effect. It's a system for ensuring that code quality stays high and consistent with standards, while simultaneously maintaining effective business decisions and encouraging tech excellence.
 
-Readability is a responsibility that should be taken seriously: not only are you a bottleneck for code approval, you are responsible for upholding the code style guide and keeping quality high. It's not something to be taken lightly. That means:
+Readability is a badge that a developer earns for excellence in code quality, attention to detail, and attention to code review. In the system, all pull requests must have at least one approval by a developer with Readability, in effect making Readability a bottleneck on code approval.
 
-- Regardless of schedule, you need to review more PRs than others.
-- Regardless of time, your PR reviews must be more in-depth and careful than others.
-- Regardless of responsibilities, you must be intimately familiar with the code style and standards at all times.
-- Regardless of pressure, you must be thorough and intensive.
-- Regardless of feelings, you must be radically honest.
+You may be thinking: why would I ever want a bottleneck on code approval? There are a few reasons why this has historically worked:
+1. It encourages excellence and discipline in order to get the badge.
+2. It allows leadership to define or update code guidelines, since they will be enforced at the point of impact by those who hold readability.
+3. It increases the overall quality of code review.
+4. It creates a reward system for those who are already most important to your codebase's ecosystem.
 
-It is your responsibility to prevent PR approval from occurring if it doesn't abide by our guidelines or if it isn't written correctly, regardless of who wrote it or what the situations surrounding the code is. **THERE ARE NO EXCEPTIONS!** If you don't understand the code, chances are that others don't either.
+Those with readability have the responsibility to block pull requests if it doesn't abide by guidelines or if it isn't written correctly, with no exceptions.
 
-You should understand that everyone else on the team will depend on you when you have Readability. That means that you should effectively already be doing Readability _before_ you go for it, to be sure that you're ready for that extra level of responsibility. The degree to which you have already been performing Readability-like tasks will be very important.
+It's important to note that Readability is _not_ a measure of who the "best" developers are. Engineers with readability are those who have proven themselves to be thoughtful and thorough, and to have a great grasp of your code standards. In an ideal world, everyone on the team will have Readability, though realistically that is unlikely.
 
-Part of the challenge of Readability is that you must focus your attention on style and code quality. While your knowledge of the business logic and organization may (and should!) be utilized, if something isn't done right, it needs to be blocked, _regardless_ of if you know that the approach fits into the current scheme. It falls upon people with Readability to push back against conformation to suboptimal solutions. When a PR is approved by an engineer with Readability, that person takes upon themselves responsibility for the contents of that PR.
+The requirements for Readability that make sense for you will differ from team to team. For example, at Google it's based on language proficiency. Below are the qualifications I use at Jet:
 
-It's important to note that Readability is _not_ a measure of who the "best" developers are. Engineers with readability are those who have proven themselves to be thoughtful and thorough, and to have a great grasp of our code standards. In an ideal world, everyone on the team would have Readability.
-
-To obtain Readability, you will need:
-
-1. A history of dedication to extensive and thorough code review, with proper style and suggestions throughout. Specific examples of your exemplary code review are appreciated.
-2. To have _read_ and _understand_ our [Code Style](http://my-jet.atlassian.net/wiki/spaces/BW/pages/522028346/Code+Style) Guide.
-    1. Reading "[Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)" by Robert Martin is a _BIG _plus. Management will buy the book for you [in paper or online form](https://forms.office.com/Pages/ResponsePage.aspx?id=xQL7kz8_3kCFbXMoVV3OeZ5ISdr1s-BNkB7HH0Z8hjlUQzg3TTI5M001UDZJTUQxU0VYSVNXRzhRTC4u).
-    2. If you're more of an audio/visual learner, Robert Martin also supplies the same information in video format via [cleancoders.com](https://cleancoders.com/videos/clean-code). If you're interested, we have team access.
-
+1. A history of dedication to extensive and thorough code review, with proper style and suggestions throughout. Specific examples of your exemplary code review are required.
+2. To have _read_ and _understand_ our Code Style Guide.
+    - Reading "[Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)" by Robert Martin is a _BIG _plus. Management will buy the book for youin paper or online form.
+    - If you're more of an audio/visual learner, Robert Martin also supplies the same information in video format via [cleancoders.com](https://cleancoders.com/videos/clean-code). If you're interested, we have team access.
 3. Good refactoring and naming skills (ie. good "code sense") – these are difficult to measure, but you can typically acquire good code sense via the book above, or by practicing by doing many refactors.
 4. To be a thorough and thoughtful engineer!
 
-To get Readability, you'll apply your skills to our codebase and present on your findings. To do so, you'll need to do the following:
 
+Likewise to requirements, the process for achieving Readability will differ from team to team. For example, at Google it's a written test. Below are the qualifications I use at Jet:
 1. Take a decent chunk of the code – this could be a particularly complex section of the code, a distinct vertical or horizontal slice, or just an area of the code that you feel could be improved!
 2. Refactor it according to our code style guidelines. Make it really high quality.
 3. Perform a presentation on that refactor during Design Review. That presentation should include...
-    1. What you did: show the changes, describe how you did it.
-    2. Findings you made: discuss the decisions you made and their tradeoffs.
-    3. Some of your favorite code style guidelines or concepts that we aren't upholding well enough (even if not found in your refactor) and/or suggestions on a guideline that should be added to the style guide.
+    - What you did: show the changes, describe how you did it.
+    - Findings you made: discuss the decisions you made and their tradeoffs.
+    - Some of your favorite code style guidelines or concepts that we aren't upholding well enough (even if not found in your refactor) and/or suggestions on a guideline that should be added to the style guide.
 
-Before you consider going for Readability, check in with the tech lead first so you can have a discussion about "code sense" and concepts. Once approved, you'll make your presentation and present it in Design Review. Before you announce that you're presenting in the Design Review, you should run your changes by the Readability group before presenting. That way, the Readability group can suggest changes and determine if the change has a large enough scope. By doing this, we try to ensure that you can't have a failed Readability presentation.
+
+I also recommend that you have a required "check in" with a mentor about intended applications and a discussion about code sense. This helps prevent people going for Readability on a whim, and it removes the potential for a failed Readability presentation (for example, scope is too small, developer doesn't really have the skills in place yet, etc) -- if it's already approved by the right people, the rest is just a presentation to spread the information through the team.
