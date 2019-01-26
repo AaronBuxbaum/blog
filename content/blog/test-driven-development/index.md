@@ -15,10 +15,10 @@ TDD operates on the "red-green-yellow" cycle:
 
 
 ### Why?
-By declaring the results of the code before you write the code, you know if the code actually works. If the tests are written after, they can accidentally assert that incorrect behavior works.
-Good code is also highly testable code. If you write the tests first, your code will be designed to be testable, and therefore, often more high quality at the same time.
-It places greater emphasis on testing. Despite the fact that better testing means a component that is more unlikely to break, it's often deprioritized, and thus bugs creep into the code.
-It helps guide your programming practices – though it seems counterintuitive, writing code in TDD is much easier and much less frustrating than without.
+- By declaring the results of the code before you write the code, you know if the code actually works. If the tests are written after, they can accidentally assert that incorrect behavior works.
+- Good code is also highly testable code. If you write the tests first, your code will be designed to be testable, and therefore, often more high quality at the same time.
+- It places greater emphasis on testing. Despite the fact that better testing means a component that is more unlikely to break, it's often deprioritized, and thus bugs creep into the code.
+- It helps guide your programming practices – though it seems counterintuitive, writing code in TDD is much easier and much less frustrating than without.
 
 
 Besides for the benefits above, perhaps the most cogent argument to me personally is that...
