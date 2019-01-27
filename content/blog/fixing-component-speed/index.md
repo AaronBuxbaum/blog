@@ -3,9 +3,6 @@ title: Fixing Component Speed
 date: '2019-01-26T22:12:03.284Z'
 ---
 
-![flow chart](flowchart.png "If you really have to distill it down...")
-_(`withComponentMetrics` has been replaced with React Profiler)_
-
 
 #### Why do components update?
 In React, components update when a value in prop or state changes. When this happens, the component itself runs the render cycle. First, it generates the VDOM and diffs it against the existing VDOM. This step is called _rendering_. If it's different, it performs a _commit_ to the actual DOM itself to change those locations. When a component receives a re-render trigger, it first checks against its `shouldComponentUpdate` function. This function tells React if it should actually test if the VDOM is different. By default, this function always returns true, so it will always run. When React runs the render cycle, it propagates the update trigger down the tree of components, which each repeat the whole thing again.
@@ -47,4 +44,8 @@ At the top of the screen, Profiler displays how many commits occurred, as well a
 #### `whyDidYouUpdate`
 `whyDidYouUpdate` is a tool that runs a deep equality check of new vs old props automatically for all components. Whenever a component receives a re-render trigger, if the props are the same by deep equality but the component is being told to update anyway, that means that it is a wasted render cycle. We can use that indicator to fix the associated parent or selector that is causing the problem, or to apply a `shouldComponentUpdate` to that component.
 
-For clarify, `whyDidYouUpdate` tells us when renders occur; React Profiler tells us when commits occur. Both are valuable tools.
+To clarify, `whyDidYouUpdate` tells us when renders occur; React Profiler tells us when commits occur. Both are valuable tools.
+
+
+![flow chart](flowchart.png "If you really have to distill it down...")
+_(`withComponentMetrics` has been replaced with React Profiler)_
