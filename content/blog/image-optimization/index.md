@@ -49,6 +49,8 @@ Instead of downloading the entire image at full quality, a progressive JPEG down
 #### Automating Your Image Pipeline
 To combine all of the points above, the best thing you can do is _automate this process_. Get it to the point where you just don't need to think about all of this stuff, so it can't be messed up. There are plenty of resources that will handle the whole process for you -- [Cloudinary](https://cloudinary.com/) is my favorite. If you need more control of the process, there are utilities out there that will manage each step of the process. See [Essential Image Optimization](https://images.guide) for in-depth suggestions.
 
+One important note: be careful to ensure that you _always_ start with a lossless file! In other words, start from the highest resolution file that you have access to. You don't want to compress an already-compressed file; the compression will be less effective and introduce more compression artifacts than if you started from the raw image itself.
+
 ## Lazy Loading
 Depending on where it's located and its importance, you may not even need to load every image on the initial page load. This is typically called _lazy loading_ -- the idea being to display something in the place of the image to allow the user to see the page immediately, then replace the placeholder with the actual image when the time is appropriate. The placeholder can be literally nothing, a smaller image, or a CSS effect. [Facebook](https://www.facebook.com) did this to great effect: on initial load, a user's profile shows their cover photo compressed to 200 bytes. This means that the user will immediately see a blurry version of their photo, which will then be replaced with the full-quality version once it finishes loading in the background.
 
