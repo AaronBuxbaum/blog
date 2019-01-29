@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { rhythm } from '../utils/typography'
 
-import { rhythm, scale } from '../utils/typography'
+const headerStyle = {
+  fontFamily: `monospace`,
+  marginTop: 0,
+};
 
 class Layout extends React.Component {
   render() {
@@ -11,18 +15,12 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
+        <h1 style={headerStyle}>
           <Link
             style={{
               boxShadow: `none`,
-              textDecoration: `none`,
               color: `inherit`,
+              textDecoration: `none`,
             }}
             to={`/`}
           >
@@ -32,12 +30,7 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
+        <h3 style={headerStyle}>
           <Link
             style={{
               boxShadow: `none`,

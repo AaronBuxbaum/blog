@@ -1,7 +1,5 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
-
 import { rhythm } from '../utils/typography'
 
 function Bio() {
@@ -13,17 +11,14 @@ function Bio() {
         return (
           <div
             style={{
-              marginBottom: rhythm(2.5),
+              fontFamily: `monospace`,
             }}
           >
-            <div>
-              By <strong>{author}</strong>
-            </div>
-            <div>
-              <a href={`https://linkedin.com/in/${social.linkedin}`}>
-                LinkedIn
-              </a>
-            </div>
+            &#123;<br/>
+              &emsp;&emsp;author: "<strong>{author}</strong>",<br/>
+              &emsp;&emsp;email: "<a href={`mailto:${social.email}`}><strong>{social.email}</strong></a>",<br/>
+              &emsp;&emsp;linkedin: "<a href={`https://linkedin.com/in/${social.linkedin}`}><strong>{`linkedin.com/in/${social.linkedin}`}</strong></a>",<br/>
+            &#125;
           </div>
         )
       }}
@@ -44,6 +39,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
+          email
           linkedin
         }
       }

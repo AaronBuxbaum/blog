@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Pseudorandom`,
+    title: `pseudorandom`,
     author: `Aaron Buxbaum`,
     description: `My personal blog for programming stuff`,
     siteUrl: `https://www.aaronbuxbaum.com/`,
     social: {
+      email: `me@aaronbuxbaum.com`,
       linkedin: `aaronbuxbaum`,
       github: 'aaronbuxbaum',
     },

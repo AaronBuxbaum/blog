@@ -1,3 +1,5 @@
 // custom typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+import 'typeface-sarabun'
+import 'typeface-aleo'
+// import 'typeface-montserrat'
+// import 'typeface-merriweather'
