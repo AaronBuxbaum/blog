@@ -3,7 +3,6 @@ title: Testing
 date: '2019-01-26T22:12:03.284Z'
 ---
 
-
 ### Why bother with testing?
 Testing is important for many reasons:
 
