@@ -8,16 +8,19 @@ import { rhythm } from '../utils/typography'
 
 const keywords = [
   'aaron buxbaum',
-  'blog',
+  'aaronbuxbaum',
   'javascript',
   'react',
+  'tech leadership',
   'clean code',
   'code quality',
   'fundamentals',
   'principles',
+  'testing',
   'solid',
   'performance',
-  'refactoring'
+  'refactoring',
+  'blog',
 ];
 
 class BlogIndex extends React.Component {
