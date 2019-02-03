@@ -94,7 +94,7 @@ Imagine a really simple function that returns an input number plus 1. If we want
 
 
 #### Brittleness
-Because code changes often, we want our tests to adapt to change easily. When an unrelated change occurs, we want to know that our code won't fail. Remember that the person who changes the code you write probably won't be you. That means that we need our tests to only fail when relevant so that they are maintainable long-term. For example, if your tests fail easily while refactoring is occuring, it will be difficult for a developer to refactor easily. Ideally, as long as the system works, the tests should also work. In other words, test the method as a black box, don't test the implementation of the method.
+Because code changes often, we want our tests to adapt to change easily. When an unrelated change occurs, we want to know that our code won't fail. Remember that the person who changes the code you write probably won't be you. That means that we need our tests to only fail when relevant so that they are maintainable long-term. For example, if your tests fail easily while refactoring is occurring, it will be difficult for a developer to refactor easily. Ideally, as long as the system works, the tests should also work. In other words, test the method as a black box, don't test the implementation of the method.
 
 
 

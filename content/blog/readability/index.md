@@ -21,7 +21,7 @@ The requirements for Readability that make sense for you will differ from team t
 
 1. A history of dedication to extensive and thorough code review, with proper style and suggestions throughout. Specific examples of your exemplary code review are required.
 2. To have _read_ and _understand_ our Code Style Guide.
-    - Reading "[Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)" by Robert Martin is a _BIG _plus. Management will buy the book for youin paper or online form.
+    - Reading "[Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)" by Robert Martin is a _BIG _plus. Management will buy the book for you in paper or online form.
     - If you're more of an audio/visual learner, Robert Martin also supplies the same information in video format via [cleancoders.com](https://cleancoders.com/videos/clean-code). If you're interested, we have team access.
 3. Good refactoring and naming skills (ie. good "code sense") – these are difficult to measure, but you can typically acquire good code sense via the book above, or by practicing by doing many refactors.
 4. To be a thorough and thoughtful engineer!
