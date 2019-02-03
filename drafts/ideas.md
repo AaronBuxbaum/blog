@@ -24,7 +24,14 @@
 - Maintainability
 - Testability
 
+- Stuff about culture in general
+  * Continuous learning
+  * Benefits
+
 - Achieving a Perfect Lighthouse Score with Gatsby
+
+- Trunk-Based Development
+- Lean Software Development
 
 - Each of the SOLID principles in more depth
     - Single Responsibility Principle
