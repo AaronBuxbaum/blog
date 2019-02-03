@@ -11,7 +11,7 @@
 - Law of Demeter
 - Don't Repeat Yourself
 - Hollywood Principle
-- Reused Abstractions principle
+- Reused Abstractions Principle
 - Separation of Concerns
 - You Aren't Gonna Need It
 
