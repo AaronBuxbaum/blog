@@ -24,6 +24,8 @@
 - Maintainability
 - Testability
 
+- Achieving a Perfect Lighthouse Score with Gatsby
+
 - Each of the SOLID principles in more depth
     - Single Responsibility Principle
     - Open/Closed Principle
