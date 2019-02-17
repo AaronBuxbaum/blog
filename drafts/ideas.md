@@ -1,5 +1,3 @@
-- Linear Programming
-  * NFL scheduling
 - Machine Learning
 - Reinforcement Learning
 
