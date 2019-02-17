@@ -14,7 +14,7 @@ The problem is compounded a bit when you consider that screens have different _p
 const getImageSize = (initialSize) => {
     const { devicePixelRatio } = window;
     const ratio = Math.round(devicePixelRatio || 1);
-    const boundedRatio = Math.ceil(Math.floor(ratio, 3), 1);
+    const boundedRatio = Math.max(Math.min(ratio, 3), 1);
     return initialSize * boundedRatio;
 };
 ```
