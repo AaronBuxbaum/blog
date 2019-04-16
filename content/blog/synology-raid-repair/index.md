@@ -1,6 +1,6 @@
 ---
 title: Synology and RAID Repair
-date: '2019-04-16T22:12:03.284Z'
+date: '2019-04-16T22:12:03.285Z'
 ---
 
 In my home, I use a Synology NAS (Network Attached Storage) as a web server, computer backup, and media content provider for video/picture/audio streaming.
@@ -35,3 +35,5 @@ Before we continue, its important to note that Synology explicitly recommends _n
   3. Find information on the disk to make sure it's the one that you want: `hdparm -I /dev/<disk id>`
   4. Turn on the write cache: `hdparm -W1 /dev/<disk id>`
   5. When you're done, turn off the write cache: `hdparm -W0 /dev/<disk id>`
+
+Doing this lowered the total time to complete my upgrade process (which was only 6TB total) from an estimation of 9 days to about 12 hours.
