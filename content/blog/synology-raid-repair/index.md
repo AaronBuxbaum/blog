@@ -1,6 +1,6 @@
 ---
 title: Synology and RAID Repair
-date: '2019-04-16T22:12:03.285Z'
+date: '2019-04-16T22:12:03.286Z'
 ---
 
 In my home, I use a Synology NAS (Network Attached Storage) as a web server, computer backup, and media content provider for video/picture/audio streaming.
