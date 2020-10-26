@@ -69,6 +69,9 @@ module.exports = {
         display: `minimal-ui`,
         icon: `static/favicon.png`,
         include_favicon: true,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-offline`,
