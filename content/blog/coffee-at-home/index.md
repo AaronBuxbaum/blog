@@ -26,7 +26,10 @@ When the berries are ripe, they are picked and dried (often called "processed").
   * Honey Process: the skin is removed mechanically, but not the mucilage. The beans, still encased in mucilage, are left out to dry in the sun. This lets the mucilage ferment and dry on the bean itself. There are several "colors" of honey process (black, red, yellow, white): the darker the color is, the less often the beans are turned while drying. The amount of pulp left on the bean also tends to increase as the color gets darker. Turning the bean breaks up fermentation processes; thus darker colors have stronger fermentation flavor profiles like raspberry and citrus, and lighter colors tends more towards stonefruits and floral tastes.
   ![honey-processing](honey-processing.jpg)
 
-These processing methods have slightly different effects on the bean: wash-processed coffee is said to have very clean, acidic, and "transparent" fruity flavors, where naturally processed coffee has a more sweet, complex, smooth profile with a heavier body. Scientific proof of what's going on exactly is pretty limited, but it seems as the time the berry spends in contact to its pulp helps, as well as the fact that naturally processed coffee inevitably includes some under- and over-ripe berries. Honey processing has a bit of both; it retains the body and sweetness of the natural process while showcasing the acidity of a washed-process. It should be noted that processing is also heavily dependent on where the coffee is grown; for example, a honey process only works well in low-humidity environments.
+These processing methods have slightly different effects on the bean: wash-processed coffee is said to have very clean, acidic, and "transparent" fruity flavors, where naturally processed coffee has a more sweet, complex, smooth profile with a heavier "body". Scientific proof of what's going on exactly is pretty limited, but it seems as the time the bean spends in contact to its pulp helps add variance, as well as the fact that naturally processed coffee inevitably includes some under- and over-ripe berries.Honey processing has a bit of both; it retains the body and sweetness of the natural process while showcasing the acidity of a washed-process. It should be noted that processing is also heavily dependent on where the coffee is grown; for example, a honey process only works well in low-humidity environments.
+
+<!-- 
+Generally speaking, wet-processed coffee is considered to have the most "terroir". _Terroir_ is a term used in wine that refers to the entire environment in which the product was grown: the soil composition, temperature, altitude, climate, history of the soil, and so on. In  -->
 
 ![parts of coffee bean](parts-of-coffee.jpg)
 
@@ -101,6 +104,13 @@ We also use the _drawdown time_ as a way to tell us if we're doing a good job of
 Note that there is a difference between sour and bitter. Sour is like citrus and fruit; it makes your mouth pucker, and you feel it on the sides of your mouth. Bitter is pungent and is more like dark chocolate or a hoppy beer, felt in the back of the tongue. It's common to confuse sour and bitter, but they are very different!
 
 Generally speaking, we want a good balance between sweet, sour, and bitter in our coffee (salty and umami do not exist in appreciable amounts). Where the balance sits is up to you, but it should be noted that needing sugar and milk to cut back on a bitter cup means you don't have a good cup of coffee. I think a coffee can be _even better_ with milk and sugar (some people strongly disagree with this), but at bare minimum, it should be drinkable by itself. It's kind of similar to a whiskey -- if it's no good alone and only tastes okay in a cocktail, you probably shouldn't use it in a cocktail to begin with. It's similar to the saying, "only cook with wine you'd drink". Yes, you can get away with lesser wine, but is it worth it? In the end, what a good cup tastes like is up to you.
+
+It's worth noting that as you get farther from the bean growing itself, the importance of that stage of production seems less important. For example, a great barista can't make a terrible coffee bean taste any good. This is somewhat different from other disciplines; a great mixologist can make a great drink out of several bad drinks, but coffee is effectively a game of decreasing quality at each stage. The best coffee is therefore just the production that has been decreased the least. In my opinion, in order from most important to least:
+  1. Bean quality
+  2. Roast
+  3. Grind
+  4. Brew method
+At each of these stages, any step can totally ruin the coffee. For example, a very dark roast completely covers any of the distinctive flavors of a great bean. Your goal, wherever you sit in the list, is to do the coffee bean justice by allowing its process to shine through in the cup.
 
 <hr />
 
