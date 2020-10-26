@@ -72,7 +72,7 @@ _v60 in use -- currently blooming_
 I'm going to talk about making pourover coffee, which is the method I use the most at home. This is effectively the same as manually performing the task of a drip/filter machine -- hot water is poured onto a bed of coffee grounds, which make their way to the bottom, get through a paper filter, and collect in a carafe. The difference with pourover is that you're doing it yourself, so you have control of all of the variables, from water temperature to pour rate and stream consistency.
 
 
-I mostly use the [Hario V60](https://amzn.to/31F9Yxo), but there are lots of alternatives. The V60 is a good choice because it's the most popular method of pourover. I also love the [Chemex](https://amzn.to/35xi2Sb) -- it provides a very clean cup, it has an attached carafe, and it just looks fantastic. The Chemex is even featured in the Museum of Modern Art's permanent collection. It also makes a truly excellent iced coffee.
+I mostly use the [Hario V60](https://amzn.to/31F9Yxo), but there are lots of alternatives. The V60 is a good choice because it's the most popular method of pourover. I also strongly recommend the [Chemex](https://amzn.to/35xi2Sb) -- it provides a very unique "clean" taste, it has an attached carafe, and it just looks fantastic. The Chemex is even featured in the Museum of Modern Art's permanent collection. It also makes a truly excellent iced coffee.
 
 ![Chemex](chemex.jpg)
 _the Chemex_
@@ -110,6 +110,7 @@ It's worth noting that as you get farther from the bean growing itself, the impo
   2. Roast
   3. Grind
   4. Brew method
+
 At each of these stages, any step can totally ruin the coffee. For example, a very dark roast completely covers any of the distinctive flavors of a great bean. Your goal, wherever you sit in the list, is to do the coffee bean justice by allowing its process to shine through in the cup.
 
 <hr />
@@ -142,6 +143,14 @@ Steps:
 7. At 1:15, pour very slowly right down the middle until the scale reads 500g. You should end at 1:45. The goal is to  agitate the grounds as _little_ as possible, and to keep the cone topped off.
 8. As soon as is safe, swirl the cone.
 9. Let it draw all the way down. Finish time is 3:00.
+
+To make iced coffee:
+* 400g of ice, put in the carafe beforehand
+* 600g of water
+* 70g of coffee
+* Do everything exactly the same as before; note that drawdown time will be longer because you have more coffee and more water.
+* Swirl the coffee in the ice. If you did it right, you'll have just a tiny bit of ice left in the carafe that won't dissolve easily.
+* Pour the coffee into a cup filled with ice and a splash of half & half (iced coffee needs milk, sorry purists!)
 
 <hr />
 
