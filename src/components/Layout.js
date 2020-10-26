@@ -15,7 +15,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1 style={headerStyle}>
+        <h2 style={headerStyle}>
           <Link
             style={{
               boxShadow: `none`,
@@ -26,7 +26,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h1>
+        </h2>
       )
     } else {
       header = (
