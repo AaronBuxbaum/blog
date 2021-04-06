@@ -12,6 +12,10 @@ const keywords = [
   'javascript',
   'react',
   'tech leadership',
+  'tech lead',
+  'coding',
+  'programming',
+  'software engineering',
   'clean code',
   'code quality',
   'fundamentals',
@@ -33,6 +37,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           keywords={keywords}
+          description="oh hello! i didn't see you there. random thoughts on programming and engineering leadership by Aaron Buxbaum"
         />
         <Bio />
         {posts.map(({ node }) => {
