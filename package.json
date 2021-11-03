@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "author": "Aaron Buxbaum <me@aaronbuxbaum.com>",
   "engines": {
-    "node": "^14.0.0"
+    "node": "^16.0.0",
+    "yarn": "^1.22.10"
   },
   "dependencies": {
     "gatsby": "^4.1.0",
