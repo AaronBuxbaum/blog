@@ -8,6 +8,7 @@ If you're a football (the _real_ kind, not soccer) fan, you're well-aware of the
 Let's talk about what needs to happen in an NFL team's regular-season schedule. First, note that the NFL is split evenly into two _conferences_: the American Football Conference (AFC) and National Football Conference (NFC). Each conference has 16 teams (half of the total 32 in the NFL), which are then each split evenly into four _divisions_: North, South, East, and West. Each division, therefore, has four teams in it.
 
 A team's NFL schedule must have the following properties:
+
 - Six games against divisional opponents - two games per team, one at home and one on the road.
 - Four games against teams from a division within its conference - two games at home and two on the road.
 - Four games against teams from a division in the other conference - two games at home and two on the road.
@@ -15,6 +16,7 @@ A team's NFL schedule must have the following properties:
 - One bye week (no game) between weeks 4 and 12.
 
 There's even more that makes this extra complicated:
+
 - A team with an early bye week one year will receive consideration for a later bye week the next season.
 - Teams scheduled to play on Thursday nights will not have to play on a short week more than once a season.
 - On Week 1, the reigning Super Bowl champion plays at home to kick off the new season.
@@ -29,6 +31,7 @@ Luckily, there's a whole branch of mathematics that's perfect for this kind of p
 Imagine you have the following problem: you own a restaurant, and you want to figure out how much to prepare for the upcoming day. You have 4 hours to prepare. You have a pizza, which costs $4 and 30 minutes to make, but sells for $15, and you have a hamburger, which costs $5 and 8 minutes to make, but sells for $9. We need to have at least 5 of each prepared. How much do you make of each to optimize profit for the day, assuming that people just buy whatever you've prepared?
 
 You could solve this conventionally with algebra, but let's take a linear optimization approach. First, set your variables:
+
 ```
 P = profit
 x = number of pizzas prepared
@@ -37,6 +40,7 @@ t = time
 ```
 
 We have some constraints, converted from the word problem into math:
+
 ```
 x >= 5; y >= 5 (we have to make at least 5 of each)
 t >= 240 (we have 4 hours to make it)
@@ -49,6 +53,7 @@ With these functions, we can now plot them on a graph, as you conventionally wou
 ![linear programming](linear-programming.png)
 
 Notice how the set of constraints we defined create an area -- we call that the _feasible region_. Anything in this area is a solution that would be acceptable given the constraints, but not necessarily optimal. Now that we have this, we'll define our optimization equation. In this case, we want to optimize profit:
+
 ```
 P = 15x + 9y
 ```
@@ -58,6 +63,7 @@ All we have to do now is take each _vertex_ (each corner, shown by dots in the p
 While this result isn't particularly mind-blowing, it shows how we can use a linear perspective to view our data in a new light, then use an optimization function to decide what _in a set of potential answers_ is the best of them. Let's jump back to the NFL to look into a little more.
 
 Like before, we're going to have to set up our constraints. In this example, we actually have our constraints already defined for us under the "must have..." list above! For example...
+
 - You must have exactly six games against divisional opponents
 - You must have exactly two games against each divisional opponent
 - You must have exactly one home game against each divisional opponent

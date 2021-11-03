@@ -6,11 +6,10 @@ date: '2019-01-26T22:12:03.284Z'
 If you use an object literal within a component, it will cause unnecessary re-renders (in other words, slow performance).
 
 There are 3 types of object literals (note that functions and arrays _are_ objects):
-- `() => { stuff here }` – function literal
+
+- `() => { stuff here }` – function literal
 - `{{ stuff here }}` – object literal
-- `{[ stuff here ]}` – array literal 
-
-
+- `{[ stuff here ]}` – array literal
 
 #### Why are object literals a problem?
 
@@ -23,71 +22,73 @@ Many components take advantage of `PureComponent` – this is explained in more
 Because a component is just a function, every time you use a literal, it is inherently a completely new reference (a brand-new object in memory). Therefore, referential equality fails, and React thinks that the component has changed. Because of this, if you pass a literal into a `PureComponent`, it automatically doesn't work. By using the techniques above, we can use the same reference, and save our `PureComponent` performance benefits.
 
 In code -- if we have the following pure component:
+
 ```
 const MyComponent = pure(({ info }) => (
     <div>{info.count}</div>
 ));
 ```
+
 ...then if we use it like this...
+
 ```
 <MyComponent info={{ count: 10 }} />
 ```
+
 ...then it will always re-render, even though we already know that nothing changed :(
 The effect of that re-render could be really huge, depending on how much occurs in and within that component. We ideally want to "cut off" unnecessary work at as high-up of a level as possible.
 
-
-
 #### What to do
 
-1. _Hoisting_: when a literal doesn't need access to variables in the component's scope, we can hoist the literal itself outside of the component.  
+1. _Hoisting_: when a literal doesn't need access to variables in the component's scope, we can hoist the literal itself outside of the component.
 
-`const Component = () => (<div styles={{ marginTop: '15px' }} /> );`
-  
-...becomes...  
-  
+`const Component = () => (<div styles={{ marginTop: '15px' }} /> );`
+
+...becomes...
+
 ```
-const styles = { marginTop: '15px' };  
-const Component = () => (  
-  <div styles={styles} />  
+const styles = { marginTop: '15px' };
+const Component = () => (
+  <div styles={styles} />
 );
 ```
 
-2. _With Handlers_: if your literal is a function, you can create the function reference earlier and use it instead. This should ideally be done within a container component.  
+2. _With Handlers_: if your literal is a function, you can create the function reference earlier and use it instead. This should ideally be done within a container component.
 
 ```
-const Component = ({ product, buyProduct }) => (  
-  <div onClick={() => buyProduct(product)}>Click here</div>  
-);
-```
-  
-...becomes...  
-
-```
-const ContainerComponent = withHandlers({  
-  onClick: ({ buyProduct, product }) => () => buyProduct(product),  
-})(PresentationalComponent);  
-
-const PresentationalComponent = ({ onClick }) => (  
-  <div onClick={onClick}>Click here</div>  
+const Component = ({ product, buyProduct }) => (
+  <div onClick={() => buyProduct(product)}>Click here</div>
 );
 ```
 
-3. _Map Props_: if your literal is formed from other props, you can evaluate the literal beforehand. This should be ideally be done within a container component.  
+...becomes...
 
 ```
-const Component = ({ productInfo }) => (  
-  <div product={{ ...productInfo, isAwesome: true }} />  
+const ContainerComponent = withHandlers({
+  onClick: ({ buyProduct, product }) => () => buyProduct(product),
+})(PresentationalComponent);
+
+const PresentationalComponent = ({ onClick }) => (
+  <div onClick={onClick}>Click here</div>
 );
 ```
-  
-...becomes...  
-  
-```
-const ContainerComponent = mapProps((props) => ({  
-  product: { ...props.productInfo, isAwesome: true },  
-}))(PresentationalComponent);  
 
-const PresentationalComponent = ({ product }) => (  
-  <div product={product} />  
+3. _Map Props_: if your literal is formed from other props, you can evaluate the literal beforehand. This should be ideally be done within a container component.
+
+```
+const Component = ({ productInfo }) => (
+  <div product={{ ...productInfo, isAwesome: true }} />
+);
+```
+
+...becomes...
+
+```
+const ContainerComponent = mapProps((props) => ({
+  product: { ...props.productInfo, isAwesome: true },
+}))(PresentationalComponent);
+
+const PresentationalComponent = ({ product }) => (
+  <div product={product} />
 );
 ```

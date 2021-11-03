@@ -34,7 +34,6 @@ class BlogPostTemplate extends React.Component {
         />
         Please contact me for any thoughts, comments, or feedback.
         <Bio />
-
         <ul
           style={{
             display: `flex`,

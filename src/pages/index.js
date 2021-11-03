@@ -25,7 +25,7 @@ const keywords = [
   'performance',
   'refactoring',
   'blog',
-];
+]
 
 class BlogIndex extends React.Component {
   render() {

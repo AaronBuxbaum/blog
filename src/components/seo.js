@@ -4,15 +4,15 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 const buildTitle = (title, siteTitle) => {
-  const prefix = title ? `${title} | ` : '';
-  return `${prefix}${siteTitle}`;
-};
+  const prefix = title ? `${title} | ` : ''
+  return `${prefix}${siteTitle}`
+}
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description
         return (
@@ -58,9 +58,9 @@ function SEO({ description, lang, meta, keywords, title }) {
               .concat(
                 keywords.length > 0
                   ? {
-                    name: `keywords`,
-                    content: keywords.join(`, `),
-                  }
+                      name: `keywords`,
+                      content: keywords.join(`, `),
+                    }
                   : []
               )
               .concat(meta)}

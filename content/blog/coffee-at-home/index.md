@@ -19,16 +19,17 @@ Generally speaking, coffea robusta is considered to have a burned and bitter fla
 One interesting thing to note here, and which will be important later, is that caffeine itself is _not_ a tasteless chemical! It is bitter and astringent, and that has at least partial responsibility to robusta's bitter taste.
 
 When the berries are ripe, they are picked and dried (often called "processed"). There are three main methods of processing:
-  * Dry / Natural Process: we wash the berries and then leave them out in the sun. Once completely dry, the bean is removed mechanically.
+
+- Dry / Natural Process: we wash the berries and then leave them out in the sun. Once completely dry, the bean is removed mechanically.
   ![dry-processing](dry-processing.jpg)
-  * Wet / Washed Process: we immerse the berries in water, and remove the ones that float (as they are not ripe). The skin is removed mechanically, and the mucilage (pulp) is allowed to ferment in an enzyme tank. The fermentation eats the mucilage off the bean, at which point the seeds can be dried.
+- Wet / Washed Process: we immerse the berries in water, and remove the ones that float (as they are not ripe). The skin is removed mechanically, and the mucilage (pulp) is allowed to ferment in an enzyme tank. The fermentation eats the mucilage off the bean, at which point the seeds can be dried.
   ![wet-processing](wet-processing.jpg)
-  * Honey Process: the skin is removed mechanically, but not the mucilage. The beans, still encased in mucilage, are left out to dry in the sun. This lets the mucilage ferment and dry on the bean itself. There are several "colors" of honey process (black, red, yellow, white): the darker the color is, the less often the beans are turned while drying. The amount of pulp left on the bean also tends to increase as the color gets darker. Turning the bean breaks up fermentation processes; thus darker colors have stronger fermentation flavor profiles like raspberry and citrus, and lighter colors tends more towards stonefruits and floral tastes.
+- Honey Process: the skin is removed mechanically, but not the mucilage. The beans, still encased in mucilage, are left out to dry in the sun. This lets the mucilage ferment and dry on the bean itself. There are several "colors" of honey process (black, red, yellow, white): the darker the color is, the less often the beans are turned while drying. The amount of pulp left on the bean also tends to increase as the color gets darker. Turning the bean breaks up fermentation processes; thus darker colors have stronger fermentation flavor profiles like raspberry and citrus, and lighter colors tends more towards stonefruits and floral tastes.
   ![honey-processing](honey-processing.jpg)
 
 These processing methods have slightly different effects on the bean: wash-processed coffee is said to have very clean, acidic, and "transparent" fruity flavors, where naturally processed coffee has a more sweet, complex, smooth profile with a heavier "body". Scientific proof of what's going on exactly is pretty limited, but it seems as the time the bean spends in contact to its pulp helps add variance, as well as the fact that naturally processed coffee inevitably includes some under- and over-ripe berries.Honey processing has a bit of both; it retains the body and sweetness of the natural process while showcasing the acidity of a washed-process. It should be noted that processing is also heavily dependent on where the coffee is grown; for example, a honey process only works well in low-humidity environments.
 
-<!-- 
+<!--
 Generally speaking, wet-processed coffee is considered to have the most "terroir". _Terroir_ is a term used in wine that refers to the entire environment in which the product was grown: the soil composition, temperature, altitude, climate, history of the soil, and so on. In  -->
 
 ![parts of coffee bean](parts-of-coffee.jpg)
@@ -41,13 +42,14 @@ _unroasted, light, medium, dark, French_
 The roaster then either packages up the coffee and sells it, or they ship it off to a resaler, who does the packaging and selling. At this point, oxidation is the enemy of good coffee, so the sooner it's in your hands, the better.
 
 When buying coffee, there's a few key things to look for:
-  1. How much you trust the seller's taste. I think there's a lot of validity here; if you've liked their coffee before, you're effectively buying in to their roaster's system and what they like. It's a reasonable starting point. If you're looking for good starting points, go to a cafe you like! Some "bigger names" that I like include: [Stumptown](https://amzn.to/34xRd0Z), [Intelligentsia](https://amzn.to/3dV9hVA), Tim Wendelboe, Chazzano.
-  2. Roast date. Look on the packaging. Does it say "Roasted at ..."? If it says "Best by ...", don't buy it. The more recently it's been roasted, the better. If it's older than say, a month, you should look elsewhere; two months is definitely too long. Some people say that coffee should sit a couple of weeks before drinking -- I don't taste any difference there, personally. If you have a coffee shop you like, they likely sell coffee beans or ground coffee, and they likely are more fresh than what you'll find at a grocery store.
-  ![roast date](roast-date.jpg)
-  3. Roast level. Like mentioned before, bad beans tend to be roasted darker to cover their distinctive features. That's not to say that you can't enjoy a dark roast coffee, but if you're buying expensive coffee, you'll probably get your best value at light or medium roast. Personally, the lighter the better, and there's some motivation to that later as I discuss brewing methodology.
-  4. Grind. I'll go into this shortly, but the _best_ is if you have your own coffee grinder and buy the roasted whole beans. If you don't have a grinder, make sure to buy a grind that is appropriate for your brewing method. For example, a Chemex pourover requires a relatively coarse grind, while an espresso must be ground much finer. Look on the packaging for what grind the coffee is best for; if it seems to suggest effectively everything, for example, both drip and espresso, that's a red flag. If you're at a coffee shop, they usually have their own grinder and can grind beans to whatever specification you want.
-  5. Oils. If you have a dark roast, you want to see visible oil on the surface of the beans. Oil comes out when the bean is roasted to a certain point, and eventually it will evaporate. A darkly roasted bean with no oil indicates that the roast was too long ago to use in a nice coffee. Note that this is relative to the roast -- you expect to see no oil at all on a light roast, and more oil on a darker roast.
-  ![oily beans](oily-beans.jpg)
+
+1. How much you trust the seller's taste. I think there's a lot of validity here; if you've liked their coffee before, you're effectively buying in to their roaster's system and what they like. It's a reasonable starting point. If you're looking for good starting points, go to a cafe you like! Some "bigger names" that I like include: [Stumptown](https://amzn.to/34xRd0Z), [Intelligentsia](https://amzn.to/3dV9hVA), Tim Wendelboe, Chazzano.
+2. Roast date. Look on the packaging. Does it say "Roasted at ..."? If it says "Best by ...", don't buy it. The more recently it's been roasted, the better. If it's older than say, a month, you should look elsewhere; two months is definitely too long. Some people say that coffee should sit a couple of weeks before drinking -- I don't taste any difference there, personally. If you have a coffee shop you like, they likely sell coffee beans or ground coffee, and they likely are more fresh than what you'll find at a grocery store.
+   ![roast date](roast-date.jpg)
+3. Roast level. Like mentioned before, bad beans tend to be roasted darker to cover their distinctive features. That's not to say that you can't enjoy a dark roast coffee, but if you're buying expensive coffee, you'll probably get your best value at light or medium roast. Personally, the lighter the better, and there's some motivation to that later as I discuss brewing methodology.
+4. Grind. I'll go into this shortly, but the _best_ is if you have your own coffee grinder and buy the roasted whole beans. If you don't have a grinder, make sure to buy a grind that is appropriate for your brewing method. For example, a Chemex pourover requires a relatively coarse grind, while an espresso must be ground much finer. Look on the packaging for what grind the coffee is best for; if it seems to suggest effectively everything, for example, both drip and espresso, that's a red flag. If you're at a coffee shop, they usually have their own grinder and can grind beans to whatever specification you want.
+5. Oils. If you have a dark roast, you want to see visible oil on the surface of the beans. Oil comes out when the bean is roasted to a certain point, and eventually it will evaporate. A darkly roasted bean with no oil indicates that the roast was too long ago to use in a nice coffee. Note that this is relative to the roast -- you expect to see no oil at all on a light roast, and more oil on a darker roast.
+   ![oily beans](oily-beans.jpg)
 
 <hr />
 
@@ -71,7 +73,6 @@ _v60 in use -- currently blooming_
 
 I'm going to talk about making pourover coffee, which is the method I use the most at home. This is effectively the same as manually performing the task of a drip/filter machine -- hot water is poured onto a bed of coffee grounds, which make their way to the bottom, get through a paper filter, and collect in a carafe. The difference with pourover is that you're doing it yourself, so you have control of all of the variables, from water temperature to pour rate and stream consistency.
 
-
 I mostly use the [Hario V60](https://amzn.to/31F9Yxo), but there are lots of alternatives. The V60 is a good choice because it's the most popular method of pourover. I also strongly recommend the [Chemex](https://amzn.to/35xi2Sb) -- it provides a very unique "clean" taste, it has an attached carafe, and it just looks fantastic. The Chemex is even featured in the Museum of Modern Art's permanent collection. It also makes a truly excellent iced coffee.
 
 ![Chemex](chemex.jpg)
@@ -86,18 +87,20 @@ The last part you'll need is some kind of scale. We use the scale to, again, hol
 The V60, carafe, and scale [bundle](https://amzn.to/31F9Yxo) combines all of this together (minus the kettle), which is exactly how I started.
 
 We now have all of the pieces we need to make coffee: coffee beans, grinder, pour method, kettle, and scale. When we're making a coffee the goal is to hold all but one of the variables constant so that we can compare differences incrementally. If we keep everything consistent, we can play with other variables and have confidence that our changes are actually the cause of changes. The variables that technically effect your ending result is basically infinite: water temperature, room temperature, coffee grind, atmospheric pressure where you're brewing, pH of the water you're using, etc etc. With that in mind, let's focus on the variables that are _easiest_ to control:
-  * Temperature: I argue that the best temperature for light-roast coffee is "as close to boiling as you can get" (see later for more in-depth argument), which makes this particularly easy. Boil water, and use it as soon as possible to avoid losing temperature. If you're using dark-roast, or if you don't buy my argument that the hottest temperature possible is ideal, you'll probably want a lower temperature. In this case, use a thermometer and try to keep it as consistent as possible between attempts. Because everyone's got a thermometer, this is pretty simple.
-  * Water: if possible, use purified water, or at least, water you like to drink. Regardless, use the same water every time. For example, you can't expect that the tap water at work and at home are the same, so the coffee is likely to be at least slightly different, even after boiled. For what it's worth, people say not to use distilled water, but it tastes fine to me.
-  * Methodology: for each step, keep the time when done, amount of water, and method in which you pour your water as consistent as you can. In addition, because we value consistency, we also should value methodologies that make consistent results easy. For example, French Press is super-consistent because there's minimal human intervention. Likewise, where possible, high agitation is better than low agitation, as variation is reduced as agitation increases (consider pouring water straight down onto a bed of coffee vs pouring water across the entire bed).
-  * Beans: each batch of beans has different physical properties, and so you can't necessarily compare one bag of coffee to another directly, holding all other variables constant. Instead, when we compare beans to each other, we optimize the grind for each bean, and only then can we compare those beans against each other.
-  * Volume of coffee vs water: if we pour more water in than the previous experiment, it's reasonable to expect different results. Therefore, we want to keep the amount of coffee and the amount of water consistent. This is what the scale is for!
+
+- Temperature: I argue that the best temperature for light-roast coffee is "as close to boiling as you can get" (see later for more in-depth argument), which makes this particularly easy. Boil water, and use it as soon as possible to avoid losing temperature. If you're using dark-roast, or if you don't buy my argument that the hottest temperature possible is ideal, you'll probably want a lower temperature. In this case, use a thermometer and try to keep it as consistent as possible between attempts. Because everyone's got a thermometer, this is pretty simple.
+- Water: if possible, use purified water, or at least, water you like to drink. Regardless, use the same water every time. For example, you can't expect that the tap water at work and at home are the same, so the coffee is likely to be at least slightly different, even after boiled. For what it's worth, people say not to use distilled water, but it tastes fine to me.
+- Methodology: for each step, keep the time when done, amount of water, and method in which you pour your water as consistent as you can. In addition, because we value consistency, we also should value methodologies that make consistent results easy. For example, French Press is super-consistent because there's minimal human intervention. Likewise, where possible, high agitation is better than low agitation, as variation is reduced as agitation increases (consider pouring water straight down onto a bed of coffee vs pouring water across the entire bed).
+- Beans: each batch of beans has different physical properties, and so you can't necessarily compare one bag of coffee to another directly, holding all other variables constant. Instead, when we compare beans to each other, we optimize the grind for each bean, and only then can we compare those beans against each other.
+- Volume of coffee vs water: if we pour more water in than the previous experiment, it's reasonable to expect different results. Therefore, we want to keep the amount of coffee and the amount of water consistent. This is what the scale is for!
 
 That leaves one last variable, which will be the variable we play with the most: grind size. Holding all of the above variables constant (or at least, as close as constant as we can), we play with the grind size in order to optimize the taste of our coffee.
 
 Because we've done such a good job of holding other variables constant, we only have three metrics we need to assess:
-  * Strength: if the coffee is too strong, decrease the volume of coffee to water; if the coffee is too weak, increase the volume of coffee to water.
-  * Taste: if the coffee is too sour, your grind is too course; if the coffee is too bitter, your grind is too fine.
-  * Flavors: this is entirely dependent on the bean. If your bean is bad, all a great pourover is going to do is make it taste _really_ bad and showcase all of the bad-tasting characteristics.
+
+- Strength: if the coffee is too strong, decrease the volume of coffee to water; if the coffee is too weak, increase the volume of coffee to water.
+- Taste: if the coffee is too sour, your grind is too course; if the coffee is too bitter, your grind is too fine.
+- Flavors: this is entirely dependent on the bean. If your bean is bad, all a great pourover is going to do is make it taste _really_ bad and showcase all of the bad-tasting characteristics.
 
 We also use the _drawdown time_ as a way to tell us if we're doing a good job of holding our variables constant. If everything stays consistent, the amount of time that it takes until all of the water gets through the beans and it is ready to drink should also be consistent. If it goes too long, this might indicate that our grind is too fine, and vice versa for if it goes too short. However, it's best to use your taste buds as the metric!
 
@@ -106,10 +109,11 @@ Note that there is a difference between sour and bitter. Sour is like citrus and
 Generally speaking, we want a good balance between sweet, sour, and bitter in our coffee (salty and umami do not exist in appreciable amounts). Where the balance sits is up to you, but it should be noted that needing sugar and milk to cut back on a bitter cup means you don't have a good cup of coffee. I think a coffee can be _even better_ with milk and sugar (some people strongly disagree with this), but at bare minimum, it should be drinkable by itself. It's kind of similar to a whiskey -- if it's no good alone and only tastes okay in a cocktail, you probably shouldn't use it in a cocktail to begin with. It's similar to the saying, "only cook with wine you'd drink". Yes, you can get away with lesser wine, but is it worth it? In the end, what a good cup tastes like is up to you.
 
 It's worth noting that as you get farther from the bean growing itself, the importance of that stage of production seems less important. For example, a great barista can't make a terrible coffee bean taste any good. This is somewhat different from other disciplines; a great mixologist can make a great drink out of several bad drinks, but coffee is effectively a game of decreasing quality at each stage. The best coffee is therefore just the production that has been decreased the least. In my opinion, in order from most important to least:
-  1. Bean quality
-  2. Roast
-  3. Grind
-  4. Brew method
+
+1. Bean quality
+2. Roast
+3. Grind
+4. Brew method
 
 At each of these stages, any step can totally ruin the coffee. For example, a very dark roast completely covers any of the distinctive flavors of a great bean. Your goal, wherever you sit in the list, is to do the coffee bean justice by allowing its process to shine through in the cup.
 
@@ -130,36 +134,38 @@ Pre-wetting the filter paper -- many people say that you want to rinse your filt
 Finally, on to the recipe I use. There's tons of recipes out there; I do something very similar to Hoffman's recipe.
 
 Ingredients:
-* Water: 500g off the tap
-* Coffee: 32.5g; light roast. Grind size 12/40 on the Encore
+
+- Water: 500g off the tap
+- Coffee: 32.5g; light roast. Grind size 12/40 on the Encore
 
 Steps:
+
 1. Heat water to boiling
 2. Pre-wet the filter, dump out the water
 3. Put in the grounds, shake the cone to even out the bed
 4. Make a little divot in the middle. This helps the water get everywhere during bloom
 5. Start timer. Pour in 2X the amount of coffee. Shake the cone to try to get the water to touch everything
 6. At 0:45, pour in circles until the scale reads 300g. You should end at 1:15. The goal is to agitate the grounds as much as possible, and to fill most of the cone.
-7. At 1:15, pour very slowly right down the middle until the scale reads 500g. You should end at 1:45. The goal is to  agitate the grounds as _little_ as possible, and to keep the cone topped off.
+7. At 1:15, pour very slowly right down the middle until the scale reads 500g. You should end at 1:45. The goal is to agitate the grounds as _little_ as possible, and to keep the cone topped off.
 8. As soon as is safe, swirl the cone.
 9. Let it draw all the way down. Finish time is 3:00.
 
 To make iced coffee:
-* 400g of ice, put in the carafe beforehand
-* 600g of water
-* 70g of coffee
-* Do everything exactly the same as before; note that drawdown time will be longer because you have more coffee and more water.
-* Swirl the coffee in the ice. If you did it right, you'll have just a tiny bit of ice left in the carafe that won't dissolve easily.
-* Pour the coffee into a cup filled with ice and a splash of half & half (iced coffee needs milk, sorry purists!)
+
+- 400g of ice, put in the carafe beforehand
+- 600g of water
+- 70g of coffee
+- Do everything exactly the same as before; note that drawdown time will be longer because you have more coffee and more water.
+- Swirl the coffee in the ice. If you did it right, you'll have just a tiny bit of ice left in the carafe that won't dissolve easily.
+- Pour the coffee into a cup filled with ice and a splash of half & half (iced coffee needs milk, sorry purists!)
 
 <hr />
 
 TL;DR: a great starting point:
-* Coffee: [Stumptown](https://amzn.to/34xRd0Z); [Intelligentsia](https://amzn.to/3dV9hVA); your favorite local coffeeshop's whole bean coffee
-* Grinder: [Baratza Encore](https://amzn.to/2FYNDU1)
-* Pourover Cone, scale: [Hario V60 bundle](https://amzn.to/31F9Yxo)
-* Kettle: [Hario kettle](https://amzn.to/3oz8y1x)
 
-
+- Coffee: [Stumptown](https://amzn.to/34xRd0Z); [Intelligentsia](https://amzn.to/3dV9hVA); your favorite local coffeeshop's whole bean coffee
+- Grinder: [Baratza Encore](https://amzn.to/2FYNDU1)
+- Pourover Cone, scale: [Hario V60 bundle](https://amzn.to/31F9Yxo)
+- Kettle: [Hario kettle](https://amzn.to/3oz8y1x)
 
 <span style="font-size: 12px;">_Disclosure: this content uses referral links_</span>

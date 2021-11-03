@@ -10,6 +10,7 @@ Much of the difficulty in programming isn't getting the computer to do what you 
 Though it's not obvious on the surface, taking your time naming things right is one of the best things you can do with your time. Making a list of possible names, taking a short break from the code, or asking a peer are all great strategies for coming up with the best name for the job.
 
 A few other points about naming:
+
 - Stick to your naming conventions. You can use whatever you like, but make sure that whatever you pick, everyone does it. Lint as much as you can of it.
 - Short names are great, but longer names are better than confusing ones.
 - Never use shorthand or acronyms. For example, use `getMessage` as opposed to `getMsg`. The former is searchable, the latter is not.

@@ -3,11 +3,11 @@ title: Code Smells
 date: '2019-01-26T22:12:03.284Z'
 ---
 
-_Code smells_ are patterns indicate a potential problem with a section of code. While the associated code typically does actually _work_, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided. If the smelly code turns out to be necessary, it should be refactored so it's as clear as possible, and as a last resort, commented.
+_Code smells_ are patterns indicate a potential problem with a section of code. While the associated code typically does actually *work*, it represents a strong indicator towards an un unrelated problem. Therefore, code smells should be investigated, fixed, and avoided. If the smelly code turns out to be necessary, it should be refactored so it's as clear as possible, and as a last resort, commented.
 
 Because these indicate where problems are, a good programmer will read these carefully and keep them in mind as they code.
 
-The following is reference of code smells from Martin Fowler's _Refactoring_ and Robert Martin's _Clean Code_.
+The following is reference of code smells from Martin Fowler's *Refactoring* and Robert Martin's _Clean Code_.
 
 ### Comments
 
@@ -38,7 +38,7 @@ The following is reference of code smells from Martin Fowler's _Refactoring_ an
 5. Duplication: Practice abstraction on duplicate code. Replace repetitive functions with polymorphism.
 6. Code at Wrong Level of Abstraction: Make sure abstracted code is separated into different containers.
 7. Base Classes Depending on Their Derivatives: Practice modularity.
-8. Too Much Information: Do a lot with a little. Limit the amount of *things* going on in a class or functions.
+8. Too Much Information: Do a lot with a little. Limit the amount of _things_ going on in a class or functions.
 9. Dead Code: Delete unexecuted code.
 10. Vertical Separation: Define variables and functions close to where they are called.
 11. Inconsistency: Choose a convention, and follow it. Remember no surprises.
@@ -89,5 +89,4 @@ The following is reference of code smells from Martin Fowler's _Refactoring_ an
 8. Test Coverage Patterns Can Be Revealing: Similarly, look at the code that is or is not passed in a failure.
 9. Tests Should Be Fast: Slow tests won't get run.
 
-
- I'm pretty sure I borrowed this list from somewhere, but I can't find the source anymore -- email me for credit if it's yours.
+I'm pretty sure I borrowed this list from somewhere, but I can't find the source anymore -- email me for credit if it's yours.

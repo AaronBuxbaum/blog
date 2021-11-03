@@ -5,7 +5,7 @@ import { rhythm } from '../utils/typography'
 const headerStyle = {
   fontFamily: `monospace`,
   marginTop: 0,
-};
+}
 
 class Layout extends React.Component {
   render() {
@@ -55,9 +55,7 @@ class Layout extends React.Component {
       >
         {header}
         {children}
-        <footer>
-          © {new Date().getFullYear()}
-        </footer>
+        <footer>© {new Date().getFullYear()}</footer>
       </div>
     )
   }

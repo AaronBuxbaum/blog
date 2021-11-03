@@ -8,15 +8,15 @@ date: '2019-01-26T22:12:03.284Z'
 **SOLID** stands for:
 
 - **S**ingle Responsibility Principle
-    - “A module should have only one reason to change, meaning that a module should only have one job.”
+  - “A module should have only one reason to change, meaning that a module should only have one job.”
 - **O**pen/Closed Principle
-    - “Objects or entities should be open for extension, but closed for modification.”
+  - “Objects or entities should be open for extension, but closed for modification.”
 - **L**iskov Substitution Principle
-    - “Derived types must be completely substitutable for their base types.”
+  - “Derived types must be completely substitutable for their base types.”
 - **I**nterface Segregation Principle
-    - “A client should never be forced to implement an interface that it doesn’t use or clients shouldn’t be forced to depend on methods they do not use.”
+  - “A client should never be forced to implement an interface that it doesn’t use or clients shouldn’t be forced to depend on methods they do not use.”
 - **D**ependency Inversion Principle
-    - “High level modules should not depend upon low level modules. Rather, both should depend upon abstractions.”
+  - “High level modules should not depend upon low level modules. Rather, both should depend upon abstractions.”
 
 ##### Single Responsibility Principle
 
@@ -40,15 +40,13 @@ Before you start coding, break down your work into multiple class stubs such tha
 
 Any class more than one statement can violate Single Responsibility, but the likelihood of violation increases exponentially with the class’ complexity, and therefore indirectly also by number of lines.
 
-As a completely arbitrary rule of thumb, components should generally build exactly one level of DOM (otherwise you can’t easily shallowly test it), modules should be less than 150 lines long, and functions should be less than 7 lines long.  
-  
+As a completely arbitrary rule of thumb, components should generally build exactly one level of DOM (otherwise you can’t easily shallowly test it), modules should be less than 150 lines long, and functions should be less than 7 lines long.
 
 > “The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that.”
 
 > “With functions we measured size by counting physical lines. With classes we use a different measure: we count responsibilities.”
 
 <!-- // TODO: example -->
-
 
 ##### Open/Closed Principle
 
@@ -68,9 +66,8 @@ HOCs are great for Open/Closed, because each wrapper handles its own implementat
 
 Another Open/Closed pattern is the Strategy pattern, in which the class delegates its responsibilities to different “strategy” implementations.
 
- 
-
 Instead of…
+
 ```
 const getTitle = () => {
   if(this.status === ENTERING) return ‘hello’;
@@ -80,6 +77,7 @@ const getTitle = () => {
 ```
 
 Do…
+
 ```
 const getTitle = () => this.strategies.find(
   (strategy) => strategy.getTitle(this.status)
@@ -92,8 +90,8 @@ const getTitle = () => this.strategies.find(
 
 If you extend a class, any overridden public methods must still be handled appropriately: preconditions cannot be strengthened in a subclass. In other words, the consumer should be able to expect that a derived type works anywhere that the base type works. What that means is that when you extend a class, every public function needs to operates the way that the contract defines them as, even if they’re irrelevant to the derived class. If a consumer changes from a base class to a derived class, there should be no difference in API expectations.
 
- 
- An example of violation would be if we have a Square class that extends Rectangle:
+An example of violation would be if we have a Square class that extends Rectangle:
+
 ```
 class Rectangle {
   setWidth(w){ this.w = w; }
@@ -103,7 +101,6 @@ class Rectangle {
 
 If a consumer switches a Rectangle instance to a Square and calls one of these functions, the requirements have changed beneath them -- now, setWidth is actually also setting height and vice-versa. Therefore, this example violates Liskov Substitution: the derived class changed the preconditions of the base class.
 
-
 ##### Interface Segregation Principle
 
 > “A client should never be forced to implement an interface that it doesn’t use or clients shouldn’t be forced to depend on methods they do not use.”
@@ -111,6 +108,7 @@ If a consumer switches a Rectangle instance to a Square and calls one of these f
 When a class implements an interface, there should be no methods that aren’t used by that class. If there are, that class needs a new interface more specific to its actual requirements. This is true still if the subclass is an exception to a rule. Interfaces define how a consumer uses your class, not simply to mirror implementation.
 
 Imagine we have an interface for Bird:
+
 ```
 interface Bird {
   fly() { … }
@@ -122,7 +120,6 @@ interface Bird {
 If we create a Penguin that implements this class, it needs to throw an error for fly.
 Therefore, Bird is not a good interface for Penguin because it violates Interface Segregation.
 
-
 ##### Dependency Inversion Principle
 
 > “High level modules should not depend upon low level modules. Rather, both should depend upon abstractions.”
@@ -131,13 +128,14 @@ Create a layer of abstraction that separates calls to APIs from the API itself.�
 
 This is similar to “Information Hiding”: if you encapsulate a design decision under an abstraction, you stabilize the entire application against changes to that decision.
 
- 
- Instead of...
+Instead of...
+
 ```
 const getProducts = () => axios.get(PRODUCTS_URL);
 ```
 
 Do...
+
 ```
 import { getRequest } from ‘utils/requests’;
 const getProducts = () => getRequest(PRODUCTS_URL);

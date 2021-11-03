@@ -1,5 +1,5 @@
 ---
-title: "No Free Lunch: A Value Proposition"
+title: 'No Free Lunch: A Value Proposition'
 date: '2019-02-01T22:12:03.284Z'
 ---
 

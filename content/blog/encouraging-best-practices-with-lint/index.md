@@ -6,6 +6,7 @@ date: '2019-02-17T22:12:03.284Z'
 I like to personally review every pull request that goes into the code base; I believe that it gives me a greater ability to speak to what's going on in the codebase, and knowing what's happening gives me a better ability to guide the team's direction. I dedicate a lot of time into reviewing code every day, so I see almost everything before it goes in (I review code after it's been merged in, too, if I somehow miss it).
 
 There's several reasons why I think this investment is worthwhile:
+
 1. You want to stop problems from occurring by preventing them from happening in the first place. It turns out that it's a lot harder to remove or fix code than it is to add it.
 2. You want to ensure that coding guidelines are being adhered to properly.
 3. You want to help junior engineers find more elegant solutions.
@@ -20,12 +21,14 @@ To do this, I established a very opinionated, strict lint ([see here](/strict-li
 Lint rules also vary between objective and opinionated. For example, you might have a rule that says that all statements need to be finished by a semicolon, or that you can't import a file that doesn't exist. The former is an opinionated rule -- JavaScript says that no semicolon is fine in many situations, but you might say that it doesn't look consistent, or that it allows mistakes to creep in. The latter is more of an objective rule -- there is explicitly no benefit to importing a file that doesn't exist.
 
 Your typical lint configurations tend towards avoiding opinionated subjects. For example, should you allow this syntax?
+
 ```
 if (condition)
     doSomething()
 ```
 
 How about this?
+
 ```
 arr
     .map(mapMe)

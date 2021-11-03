@@ -7,15 +7,15 @@ _Linting_ is a set of metrics that are statically analyzed against the code. Thi
 
 I recommend having two lint files -- _build_ and _strict_. The reason for two is that there's almost always a difference between your currently accomplished code standards and your prospective, desired code standards. In my experience, the best way to push your team towards a desired style is with the split lint files.
 
-* The build lint represents the accomplished code standards. It is run against all of the files in the codebase, and you expect that anything that makes it into the codebase passes this lint with 0 errors and 0 warnings.
-* The strict lint represents the future of your code standards. When it is run in the build is up for debate (discussed below), but it is the default IDE lint, and there is a separate command to run the strict lint on changed files. Because of this fact, we must also make sure that the strict lint is always in compliance with the build lint (in other words, the strict lint must be a superset of the build lint).
-
+- The build lint represents the accomplished code standards. It is run against all of the files in the codebase, and you expect that anything that makes it into the codebase passes this lint with 0 errors and 0 warnings.
+- The strict lint represents the future of your code standards. When it is run in the build is up for debate (discussed below), but it is the default IDE lint, and there is a separate command to run the strict lint on changed files. Because of this fact, we must also make sure that the strict lint is always in compliance with the build lint (in other words, the strict lint must be a superset of the build lint).
 
 ### Why bother with a strict lint?
+
 A strict lint goes a step farther than your usual lint and helps push developers into the right patterns in real-time as they code. Over time, this has proven effective – though often annoying at the time, the end result of my strict lint-compliant code has consistently been better than code that is only build lint-compliant code. That lets you create lint rules which are more arbitrary, but represent accepted standards of quality. For example, my lint file restricts functions to 7 statements, among many other things.
 
-
 ### What will be the long-term plan for strict linting?
+
 As your engineers develop according to the strict lint, eventually you'll have compliance for some strict-lint rules throughout the codebase. At that point, you can move that rule into your build lint. Over time, that means that standards are improving, build rules are keeping those standards in check, and you now have more room to move in your strict lint.
 
 That means that your build lint mostly represents "previously completed strict lint rules", and each time a rule is completed, you can push the boundaries again. It's conceivable that you'll eventually reach a point where your entire codebase is under strict lint, and you don't want to change the strict lint anymore. In that case, you should fold back into a single lint file. However, that's really hard, especially if you follow rules as difficult as the ones I personally use (those will be given below).
@@ -25,9 +25,8 @@ Team discussions about strict lint rules are encouraged. While many of the rules
 
 An important part of this process is the trying part. For example, I have always seen resistance to my seven-statement limit rule, but after trying it, I've always been told that it changed the way they write code. Pairing with your programmers to help make sense of the rules in context may help here, as well.
 
-
-
 ## My lint
+
 Though many of the rules are inherently arbitrary, they tend to reflect leading research and books on the subject, primarily "Clean Code" by Robert Martin and "Refactoring" by Martin Fowler.
 
 Feel free to take these and adapt them however you want. Note that a lot of the best rules come implicitly from extension of Airbnb's excellent eslint config.

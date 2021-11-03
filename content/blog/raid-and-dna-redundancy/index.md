@@ -20,4 +20,3 @@ Like a sector on a hard drive failing, a single bad mutation can be disastrous. 
 To "prevent" this from happening (on an evolutionary scale -- I'm sure the actual science behind this is much more complicated), DNA isn't read linearly from the nucleotide level. Instead, three nucleotides form a codon, which is then read in. Because there are 64 possible combinations of nucleotides (4^3) and only 20 natural codons, each triplet pair inherently has built-in replication. A mutation can occur, but it's decently likely that the mutation will still land on the same end result.
 
 ![dna coding grid](dna-coding.jpg)
- 

@@ -16,7 +16,7 @@ It states that all functions should fall into one of two categories (but not bo
 
 In other words, a function that does something to the state of the application should not have a return value.
 
-Creating a function which _calls_ a command and a query is not a violation of this concept, though it should not have a return value (since anything that wraps a command is also a command).
+Creating a function which *calls* a command and a query is not a violation of this concept, though it should not have a return value (since anything that wraps a command is also a command).
 
 &nbsp;
 

@@ -16,8 +16,8 @@ The following are thresholds that I believe should be measured and analyzed agai
 9. Retained server memory should not exceed X GB after up to Y hours of on-time.
 10. Retained server memory should not exceed X GB after up to Y week of on-time.
 
-
 #### Notes:
+
 - **Blocking time** is defined as the amount of time that the _server_ spends actively processing a request from end-to-end, as seen in Chrome's Inspect tab. It excludes wait time and garbage collection.
 - **Wait time** is defined as the total amount of time that the _client_ spends from sending a request to receiving its first byte in response, as seen from Chrome's Network tab.
 - **Load time** is defined as the time until the `load` event occurs on the client, as seen from Chrome's Network tab.
