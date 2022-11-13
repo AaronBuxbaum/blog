@@ -5810,7 +5810,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", null],
             ["@types/webpack", null],
             ["find-cache-dir", "npm:3.3.2"],
-            ["loader-utils", "npm:1.4.0"],
+            ["loader-utils", "npm:1.4.2"],
             ["make-dir", "npm:3.1.0"],
             ["schema-utils", "npm:2.7.1"],
             ["webpack", "virtual:9db31fd2fe155fdd19e4586b2a1d4f5c1272fc115d7dff131b58afb287a112abfd1af476f544932b94eaea01b84c68fd69fe8d5584fafe94de897ac407bb7e79#npm:5.61.0"]
@@ -13564,10 +13564,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["loader-utils", [
-        ["npm:1.4.0", {
-          "packageLocation": "./.yarn/cache/loader-utils-npm-1.4.0-a56254a277-d150b15e7a.zip/node_modules/loader-utils/",
+        ["npm:1.4.2", {
+          "packageLocation": "./.yarn/cache/loader-utils-npm-1.4.2-b4537b2f88-eb6fb622ef.zip/node_modules/loader-utils/",
           "packageDependencies": [
-            ["loader-utils", "npm:1.4.0"],
+            ["loader-utils", "npm:1.4.2"],
             ["big.js", "npm:5.2.2"],
             ["emojis-list", "npm:3.0.0"],
             ["json5", "npm:1.0.1"]
@@ -21927,7 +21927,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yaml-loader-npm-0.6.0-348c22dc2a-de6f070aaf.zip/node_modules/yaml-loader/",
           "packageDependencies": [
             ["yaml-loader", "npm:0.6.0"],
-            ["loader-utils", "npm:1.4.0"],
+            ["loader-utils", "npm:1.4.2"],
             ["yaml", "npm:1.10.2"]
           ],
           "linkType": "HARD",
