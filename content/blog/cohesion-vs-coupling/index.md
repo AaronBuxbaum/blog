@@ -1,6 +1,6 @@
 ---
 title: Cohesion vs Coupling
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 High-quality code has the dual properties of high cohesion and low coupling.

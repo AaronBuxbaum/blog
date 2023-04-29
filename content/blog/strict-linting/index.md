@@ -1,6 +1,6 @@
 ---
 title: Strict Linting
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 _Linting_ is a set of metrics that are statically analyzed against the code. This static analysis can inform the user about known bad code patterns, performance inefficiencies, poor naming practices, and so on.

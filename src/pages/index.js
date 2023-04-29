@@ -1,37 +1,37 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
+import Bio from "../components/Bio";
+import Layout from "../components/Layout";
+import SEO from "../components/seo";
+import { rhythm } from "../utils/typography";
 
 const keywords = [
-  'aaron buxbaum',
-  'aaronbuxbaum',
-  'javascript',
-  'react',
-  'tech leadership',
-  'tech lead',
-  'coding',
-  'programming',
-  'software engineering',
-  'clean code',
-  'code quality',
-  'fundamentals',
-  'principles',
-  'testing',
-  'solid',
-  'performance',
-  'refactoring',
-  'blog',
-]
+  "aaron buxbaum",
+  "aaronbuxbaum",
+  "javascript",
+  "react",
+  "tech leadership",
+  "tech lead",
+  "coding",
+  "programming",
+  "software engineering",
+  "clean code",
+  "code quality",
+  "fundamentals",
+  "principles",
+  "testing",
+  "solid",
+  "performance",
+  "refactoring",
+  "blog",
+];
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -41,7 +41,7 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+          const title = node.frontmatter.title || node.fields.slug;
           return (
             <div key={node.fields.slug}>
               <h3
@@ -56,14 +56,14 @@ class BlogIndex extends React.Component {
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
-          )
+          );
         })}
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -87,4 +87,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

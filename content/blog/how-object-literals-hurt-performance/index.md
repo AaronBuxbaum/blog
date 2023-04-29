@@ -1,6 +1,6 @@
 ---
 title: How Object Literals Hurt Performance
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 If you use an object literal within a component, it will cause unnecessary re-renders (in other words, slow performance).

@@ -1,6 +1,6 @@
 ---
 title: The NFL and Linear Optimization
-date: '2019-02-12T22:12:03.284Z'
+date: "2019-02-12T22:12:03.284Z"
 ---
 
 If you're a football (the _real_ kind, not soccer) fan, you're well-aware of the yearly schedule release. At some point between April and August, the regular-season schedule for each of the 32 teams is released. Fans and pundits immediately begin analyzing it and making predictions about the upcoming year, and the [95 billion dollar football gambling industry](https://www.ibtimes.com/legalized-sports-gambling-americans-bet-95-billion-nfl-college-football-season-mostly-2089606) is officially kicked off. What you might not have thought about is how computation goes into making those schedules a reality!

@@ -1,6 +1,6 @@
 ---
 title: Encouraging Best Practices with Lint
-date: '2019-02-17T22:12:03.284Z'
+date: "2019-02-17T22:12:03.284Z"
 ---
 
 I like to personally review every pull request that goes into the code base; I believe that it gives me a greater ability to speak to what's going on in the codebase, and knowing what's happening gives me a better ability to guide the team's direction. I dedicate a lot of time into reviewing code every day, so I see almost everything before it goes in (I review code after it's been merged in, too, if I somehow miss it).

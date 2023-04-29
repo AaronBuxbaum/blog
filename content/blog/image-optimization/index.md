@@ -1,6 +1,6 @@
 ---
 title: Image Optimization
-date: '2019-01-29T22:12:03.284Z'
+date: "2019-01-29T22:12:03.284Z"
 ---
 
 For better or worse, many of the biggest performance gains in front-end engineering regard lowering network payload, and the biggest payloads are from rich media -- particularly video and images. I've had a decent amount of experience in optimizing image-heavy websites, and a few strategies have emerged as particularly effective.

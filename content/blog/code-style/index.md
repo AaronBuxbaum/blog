@@ -1,9 +1,9 @@
 ---
 title: Code Style
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
-![xkcd](https://imgs.xkcd.com/comics/code_quality_2x.png 'via xkcd')
+![xkcd](https://imgs.xkcd.com/comics/code_quality_2x.png "via xkcd")
 
 ### What is code style?
 
@@ -26,7 +26,7 @@ Let's analyze what goes into good code style:
 
 Before you submit anything, it's important to *always* go back over your code from the perspective of a new, junior hire. If they had to review your code, would they understand it? If they ran into your code while trying an early project, would they be able to get to the important stuff quickly? Again, recall that we only have 3-4 data chunks available: each time we demand attention, we take at least one of those away from what is otherwise very important stored memory.  Moving from one section of code to another is similar to calling a function from another. It creates a totally new context, requires bringing along exactly the right data to that context, and ultimately needs the correct data be returned back up the "call stack".  When someone needs to trace your logic through multiple contexts without guidance there is always the chance that they will hit a moment of "wait, how did that work again?", metaphorically return null, and start a frustrating loop of re-reading previous code.  Your logic should trace through steps that not only feel appropriate, but inevitable. Use functions and abstractions to allow the reader to understand a concept and build off of it quickly.
 
-![xkcd](https://imgs.xkcd.com/comics/code_quality_3_2x.png 'via xkcd')
+![xkcd](https://imgs.xkcd.com/comics/code_quality_3_2x.png "via xkcd")
 
 ### Why is code style *not* the same as lint?
 
@@ -40,4 +40,4 @@ I strongly recommend Airbnb's and Google's code style documentations:
 - [Airbnb React Code Style](https://github.com/airbnb/javascript/tree/master/react)
 - [Google Style Guides](https://github.com/google/styleguide)
 
-![xkcd](https://imgs.xkcd.com/comics/code_quality_2_2x.png 'via xkcd')
+![xkcd](https://imgs.xkcd.com/comics/code_quality_2_2x.png "via xkcd")

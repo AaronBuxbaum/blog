@@ -1,6 +1,6 @@
 ---
-title: 'No Free Lunch: A Value Proposition'
-date: '2019-02-01T22:12:03.284Z'
+title: "No Free Lunch: A Value Proposition"
+date: "2019-02-01T22:12:03.284Z"
 ---
 
 At one point in my career, I enjoyed the [perhaps overly-lavish](http://time.com/3024615/inside-googles-new-york-city-office/) digs over at Google's NYC office. While I believe much of the hype regarding the office amenities is significantly overblown, I keep mentally coming back to the free lunch as one of the best moves they could have made, and I'm continually surprised that this trend is not nearly as common as it should be. Here's why.

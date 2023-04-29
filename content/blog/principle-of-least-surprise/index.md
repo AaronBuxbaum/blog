@@ -1,6 +1,6 @@
 ---
 title: Principle of Least Surprise
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 The Principle of Least Surprise is a concept that is used to frame your mindset as you code.

@@ -1,6 +1,6 @@
 ---
 title: Naming
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 > "There are only two hard things in Computer Science: cache invalidation, naming things, and off-by-one errors."

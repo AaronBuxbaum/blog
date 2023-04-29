@@ -1,6 +1,6 @@
 ---
 title: shouldComponentUpdate and Pure Components
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 #### The Render Cycle

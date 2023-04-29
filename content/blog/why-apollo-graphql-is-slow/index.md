@@ -1,6 +1,6 @@
 ---
 title: "Apollo GraphQL: why it's slow and what to do about it"
-date: '2020-10-14T22:12:03.284Z'
+date: "2020-10-14T22:12:03.284Z"
 ---
 
 Apollo is a company which provides a nicely-written and open-sourced client and server combination for GraphQL. As of this writing, it is by far both the most popular GraphQL client and the most popular GraphQL server.

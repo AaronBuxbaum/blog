@@ -1,6 +1,6 @@
 ---
 title: Root Cause Analysis & No-Blame Culture
-date: '2019-01-30T22:12:03.284Z'
+date: "2019-01-30T22:12:03.284Z"
 ---
 
 Regardless of how polished your fundamentals are, it's inevitable that mistakes will happen. Much of what differentiates a productive and unproductive culture is the degree to which the lessons of those mistakes help inform future decisions -- it's likely that your fundamentals aren't as perfect as you'd like to imagine, and it's best to be open for improvement when breakdowns occur. In my experience, the best way to make that change happen is through Root Cause Analysis (RCA).

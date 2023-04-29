@@ -1,6 +1,6 @@
 ---
 title: SOLID Principles
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 **SOLID** is an acronym for a set of best-practice principles that have been shown over time to result in higher-quality code. They’re concepts that can help make software more understandable, flexible and maintainable. Use them as guiding concepts as you write code.

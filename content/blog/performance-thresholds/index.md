@@ -1,6 +1,6 @@
 ---
 title: Performance Thresholds
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 The following are thresholds that I believe should be measured and analyzed against before a deploy can occur. The values will differ from application to application, but the important part is the act of maintaining a threshold in the first place. If you're measuring it, you'll know if something goes wrong.

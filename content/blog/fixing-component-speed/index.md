@@ -1,6 +1,6 @@
 ---
 title: Fixing Component Speed
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 #### Why do components update?
@@ -53,5 +53,5 @@ At the top of the screen, Profiler displays how many commits occurred, as well a
 
 To clarify, `whyDidYouUpdate` tells us when renders occur; React Profiler tells us when commits occur. Both are valuable tools.
 
-![flow chart](flowchart.png 'If you really have to distill it down...')
+![flow chart](flowchart.png "If you really have to distill it down...")
 _(`withComponentMetrics` has been replaced with React Profiler)_

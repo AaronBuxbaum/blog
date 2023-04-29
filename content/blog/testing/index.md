@@ -1,6 +1,6 @@
 ---
 title: Testing
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 ### Why bother with testing?

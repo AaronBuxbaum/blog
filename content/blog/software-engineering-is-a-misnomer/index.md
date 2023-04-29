@@ -1,6 +1,6 @@
 ---
 title: Software Engineering is a Misnomer
-date: '2020-12-01T22:12:03.284Z'
+date: "2020-12-01T22:12:03.284Z"
 ---
 
 The juxtaposition of the term "software engineer" against other engineering disciplines strikes me as particularly awkward, in the same manner that "domestic engineer" seems like inaccurate terminology. There's not much engineering going on in either case, in the sense that engineering is the job of building new products in a reliable manner within the context of strict definitions and regulations.

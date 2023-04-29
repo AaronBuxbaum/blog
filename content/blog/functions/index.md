@@ -1,6 +1,6 @@
 ---
 title: Functions
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 #### What does a good function look like?

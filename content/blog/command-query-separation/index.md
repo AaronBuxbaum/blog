@@ -1,6 +1,6 @@
 ---
 title: Command-Query Separation
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 Command-Query Separation is a guideline to help you write clean, reusable code. It helps you mentally separate responsibility in functions.

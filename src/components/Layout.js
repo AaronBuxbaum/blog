@@ -1,17 +1,17 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
+import React from "react";
+import { Link } from "gatsby";
+import { rhythm } from "../utils/typography";
 
 const headerStyle = {
   fontFamily: `monospace`,
   marginTop: 0,
-}
+};
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { location, title, children } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
@@ -27,7 +27,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h2>
-      )
+      );
     } else {
       header = (
         <h3 style={headerStyle}>
@@ -42,7 +42,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h3>
-      )
+      );
     }
     return (
       <div
@@ -57,8 +57,8 @@ class Layout extends React.Component {
         {children}
         <footer>© {new Date().getFullYear()}</footer>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;

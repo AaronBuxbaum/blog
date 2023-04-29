@@ -1,6 +1,6 @@
 ---
 title: Great Coffee at Home
-date: '2020-10-26T22:12:03.284Z'
+date: "2020-10-26T22:12:03.284Z"
 ---
 
 Due to the pandemic, my love of good coffee has turned into more of a hobby. I can no longer grab a cappuccino on the way to work, or get a cup at the drip machine whenever convenient, and because I've had to make my own coffee, I've learned a lot about how coffee-making works. I figure I'll share some of what I've learned here, as lots of similar minded people are in the same boat.

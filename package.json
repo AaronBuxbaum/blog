@@ -49,7 +49,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'content/**/*.md'",
+    "format": "prettier --cache --write 'src/**/*.js' 'content/**/*.md'",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build"

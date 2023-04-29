@@ -1,6 +1,6 @@
 ---
 title: RAID and DNA Replication
-date: '2019-04-23T22:12:03.284Z'
+date: "2019-04-23T22:12:03.284Z"
 ---
 
 I've had a strange relationship with biology. My father is a chemical engineer, and he did a great job of instilling interest in the sciences... but it just never "clicked" academically. I didn't do well in chemistry or biology in school, despite my interest in it. In hindsight, this is surprising: similarly to computer science, biology is heavily dependent on abstraction and systems thinking.

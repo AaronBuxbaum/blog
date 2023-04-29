@@ -1,18 +1,18 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import { rhythm } from '../utils/typography'
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import { rhythm } from "../utils/typography";
 
 const bioStyles = {
-  fontFamily: 'monospace',
-  whiteSpace: 'nowrap',
+  fontFamily: "monospace",
+  whiteSpace: "nowrap",
   marginBottom: rhythm(2.5),
-}
+};
 
 const Bio = () => (
   <StaticQuery
     query={bioQuery}
     render={(data) => {
-      const { author, social } = data.site.siteMetadata
+      const { author, social } = data.site.siteMetadata;
 
       return (
         <div style={bioStyles}>
@@ -40,10 +40,10 @@ const Bio = () => (
           <br />
           &#125;
         </div>
-      )
+      );
     }}
   />
-)
+);
 
 const bioQuery = graphql`
   query BioQuery {
@@ -58,6 +58,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Bio
+export default Bio;

@@ -1,6 +1,6 @@
 ---
 title: Pair Programming
-date: '2019-01-26T22:12:03.284Z'
+date: "2019-01-26T22:12:03.284Z"
 ---
 
 Pair Programming is a great way to write better code and disseminate knowledge through the team at the same time. Counterintuitively, pairing has been shown to increase, not decrease, overall team velocity long-term – even though engineering man-hours are higher overall.
