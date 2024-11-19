@@ -41,6 +41,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^8.39.0",
     "eslint-plugin-react": "^7.37.2",
+    "gatsby-adapter-netlify": "^1.2.0",
     "prettier": "^3.3.3"
   },
   "repository": {
