@@ -34,41 +34,22 @@ const Nav = () => (
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    let header;
+    const { title, children } = this.props;
+    const header = (
+      <h2 style={headerStyle}>
+        <Link
+          style={{
+            boxShadow: `none`,
+            color: `inherit`,
+            textDecoration: `none`,
+          }}
+          to={`/`}
+        >
+          {title}
+        </Link>
+      </h2>
+    );
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h2 style={headerStyle}>
-          <Link
-            style={{
-              boxShadow: `none`,
-              color: `inherit`,
-              textDecoration: `none`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h2>
-      );
-    } else {
-      header = (
-        <h3 style={headerStyle}>
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      );
-    }
     return (
       <div
         style={{
