@@ -7,43 +7,49 @@ const headerStyle = {
   marginTop: 0,
 };
 
+const navStyle = {
+  fontFamily: `monospace`,
+  marginTop: rhythm(-1),
+  marginBottom: rhythm(1.5),
+};
+
+const navLinks = [
+  { to: `/`, label: `blog` },
+  { to: `/consulting/`, label: `consulting` },
+  { to: `/pseudorandom/`, label: `pseudorandom llc` },
+];
+
+const Nav = () => (
+  <nav style={navStyle}>
+    {navLinks.map(({ to, label }, index) => (
+      <React.Fragment key={to}>
+        {index > 0 && ` · `}
+        <Link to={to} style={{ boxShadow: `none` }}>
+          {label}
+        </Link>
+      </React.Fragment>
+    ))}
+  </nav>
+);
+
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    let header;
+    const { title, children } = this.props;
+    const header = (
+      <h2 style={headerStyle}>
+        <Link
+          style={{
+            boxShadow: `none`,
+            color: `inherit`,
+            textDecoration: `none`,
+          }}
+          to={`/`}
+        >
+          {title}
+        </Link>
+      </h2>
+    );
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h2 style={headerStyle}>
-          <Link
-            style={{
-              boxShadow: `none`,
-              color: `inherit`,
-              textDecoration: `none`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h2>
-      );
-    } else {
-      header = (
-        <h3 style={headerStyle}>
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      );
-    }
     return (
       <div
         style={{
@@ -54,6 +60,7 @@ class Layout extends React.Component {
         }}
       >
         {header}
+        <Nav />
         {children}
         <footer>© {new Date().getFullYear()}</footer>
       </div>
