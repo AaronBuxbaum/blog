@@ -15,7 +15,7 @@ const navStyle = {
 
 const navLinks = [
   { to: `/`, label: `blog` },
-  { to: `/hire-me/`, label: `hire me` },
+  { to: `/consulting/`, label: `consulting` },
   { to: `/pseudorandom/`, label: `pseudorandom llc` },
 ];
 
