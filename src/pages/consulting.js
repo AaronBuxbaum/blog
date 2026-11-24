@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Bio from "../components/Bio";
+import JsonBlock from "../components/JsonBlock";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
@@ -23,6 +23,7 @@ const ConsultingPage = ({ data, location }) => {
   const { title: siteTitle, social } = data.site.siteMetadata;
   const consultingMail = `mailto:${social.email}?subject=Consulting`;
   const mentorshipMail = `mailto:${social.email}?subject=Mentorship`;
+  const trainingMail = `mailto:${social.email}?subject=Training`;
   const mentorCruiseUrl = `https://mentorcruise.com/mentor/aaronbuxbaum/`;
 
   return (
@@ -30,9 +31,16 @@ const ConsultingPage = ({ data, location }) => {
       <SEO
         title="Consulting"
         keywords={keywords}
-        description="Hire Aaron Buxbaum to build your app with AI, or for mentorship."
+        description="Hire Aaron Buxbaum to build your app with AI, train your team, or mentor you."
       />
-      <h1>Consulting</h1>
+      <JsonBlock
+        entries={[
+          { key: `consultant`, value: `Aaron Buxbaum` },
+          { key: `builds`, value: `software, with AI` },
+          { key: `offers`, value: `building, training, mentoring` },
+          { key: `email`, value: social.email, href: consultingMail },
+        ]}
+      />
       <p>
         Hey there! I&#39;m Aaron. I&#39;ve been building software professionally
         for 15 years, and I build it with AI.
@@ -82,9 +90,7 @@ const ConsultingPage = ({ data, location }) => {
         <li>
           Rescuing a codebase that has gotten slow, fragile, or hard to change
         </li>
-        <li>
-          Setting up AI development processes so your own team moves faster
-        </li>
+        <li>Training your team to build with AI</li>
         <li>Architecture reviews and second opinions</li>
       </ul>
       <p>
@@ -94,6 +100,20 @@ const ConsultingPage = ({ data, location }) => {
       </p>
       <p>
         <a href={consultingMail}>Email me about your project</a>
+      </p>
+
+      <h4>Training</h4>
+      <p>
+        I also train engineering teams to build software with AI. Training is
+        hands-on and happens in your own codebase, so it sticks. We cover
+        setting up an AI development process, getting good results out of AI
+        tools, and keeping code quality high while you move faster. I can also
+        teach the fundamentals I write about here, like{" "}
+        <Link to="/testing/">testing</Link>,{" "}
+        <Link to="/code-review/">code review</Link>, and React.
+      </p>
+      <p>
+        <a href={trainingMail}>Email me about training</a>
       </p>
 
       <h4>Mentorship</h4>
@@ -116,9 +136,6 @@ const ConsultingPage = ({ data, location }) => {
         <a href={mentorCruiseUrl}>MentorCruise</a>, or{" "}
         <a href={mentorshipMail}>email me</a>.
       </p>
-
-      <hr />
-      <Bio />
     </Layout>
   );
 };
