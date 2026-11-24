@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
-import { rhythm } from "../utils/typography";
+import JsonBlock from "../components/JsonBlock";
 
 const keywords = [
   "pseudorandom",
@@ -17,12 +17,6 @@ const keywords = [
   "aaron buxbaum",
 ];
 
-const taglineStyle = {
-  fontFamily: `monospace`,
-  marginTop: rhythm(-0.5),
-  marginBottom: rhythm(1.5),
-};
-
 const PseudorandomPage = ({ data, location }) => {
   const { title: siteTitle, social } = data.site.siteMetadata;
   const contactMail = `mailto:${social.email}?subject=Pseudorandom`;
@@ -34,8 +28,15 @@ const PseudorandomPage = ({ data, location }) => {
         keywords={keywords}
         description="Pseudorandom LLC builds apps and tools that people like using, with AI."
       />
-      <h1>Pseudorandom LLC</h1>
-      <p style={taglineStyle}>{"// we build user-friendly tools with AI"}</p>
+      <JsonBlock
+        entries={[
+          { key: `company`, value: `Pseudorandom LLC` },
+          { key: `builds`, value: `user-friendly tools, with AI` },
+          { key: `offers`, value: `building, training` },
+          { key: `led_by`, value: `Aaron Buxbaum`, to: `/consulting/` },
+          { key: `email`, value: social.email, href: contactMail },
+        ]}
+      />
 
       <p>
         Pseudorandom builds apps and tools that people like using, and we use AI
@@ -57,15 +58,16 @@ const PseudorandomPage = ({ data, location }) => {
         get it sooner.
       </p>
 
-      <h4>What do we build?</h4>
+      <h4>What do we do?</h4>
       <ul>
-        <li>New apps and internal tools</li>
-        <li>Production versions of prototypes that never got finished</li>
-        <li>AI features inside your product, when AI helps your users too</li>
+        <li>Build new apps and internal tools</li>
+        <li>Finish prototypes that never made it to production</li>
+        <li>Add AI features to your product, when AI helps your users too</li>
         <li>
-          Testing and evaluation, so you know your AI features work and keep
-          working as models change
+          Set up testing and evaluation, so you know your AI features work and
+          keep working as models change
         </li>
+        <li>Train your team to build with AI, hands-on in your own codebase</li>
       </ul>
 
       <h4>Why us?</h4>
