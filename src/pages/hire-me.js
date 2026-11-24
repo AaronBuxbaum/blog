@@ -22,6 +22,7 @@ const HireMePage = ({ data, location }) => {
   const { title: siteTitle, social } = data.site.siteMetadata;
   const consultingMail = `mailto:${social.email}?subject=Consulting`;
   const mentorshipMail = `mailto:${social.email}?subject=Mentorship`;
+  const mentorCruiseUrl = `https://mentorcruise.com/mentor/aaronbuxbaum/`;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -32,34 +33,46 @@ const HireMePage = ({ data, location }) => {
       />
       <h1>Hire Me</h1>
       <p>
-        I&#39;m a staff software engineer with over 10 years of experience, most
-        recently leading frontend engineering at Nuro. Before that I was at
-        Detect, Quantum-Si, Jet.com, and Google Maps. I&#39;m available for a
-        limited amount of consulting and mentorship work.
+        Hey there! I&#39;m Aaron, and I&#39;ve been working professionally in
+        software for 15 years. I have a BS and MS in Computer Science (with a
+        specialization in Machine Learning), along with another MS in Analytics.
+        I specialize in full-stack and frontend development, developing software
+        talent at scale, and Agile and AI development processes.
+      </p>
+      <p>
+        I&#39;ve worked on financial risk analysis with fractal algorithms, on
+        Google Maps, at Walmart Labs, and as Engineer #2 at a biotech startup
+        that had a successful IPO. Most recently, I&#39;ve been in the
+        autonomous vehicles space, working on the ML systems that drive a
+        robotaxi.
       </p>
 
       <h4>Consulting</h4>
-      <p>I can help with:</p>
+      <p>
+        I build software with AI. AI is part of every step of my development
+        process, which lets me get a working app in front of you quickly without
+        giving up on code quality. I can help with:
+      </p>
       <ul>
+        <li>Building a new app or internal tool</li>
         <li>
-          Frontend architecture, especially React and TypeScript in larger
-          codebases
+          Full-stack and frontend architecture, especially React and TypeScript
         </li>
         <li>
           Big rewrites and migrations (I led the rewrite of Jet.com&#39;s 1.1M
           line codebase into React and Redux)
         </li>
         <li>Performance, both in the browser and in your build pipeline</li>
-        <li>Design systems and shared component libraries</li>
-        <li>Internal tools and developer infrastructure</li>
+        <li>
+          Setting up AI development processes, so your own team moves faster
+        </li>
         <li>Engineering practices like code review, testing, and linting</li>
         <li>Architecture reviews and second opinions</li>
       </ul>
       <p>
         This can be a short project, like an audit or a review, or something
-        longer where I work alongside your team. If you want to build something
-        with AI, or you need more than one person, take a look at{" "}
-        <Link to="/pseudorandom/">Pseudorandom</Link>.
+        longer where I work alongside your team. If you need more than one
+        person, take a look at <Link to="/pseudorandom/">Pseudorandom</Link>.
       </p>
       <p>
         <a href={consultingMail}>Email me about consulting</a>
@@ -67,28 +80,33 @@ const HireMePage = ({ data, location }) => {
 
       <h4>Mentorship</h4>
       <p>
-        I&#39;ve mentored a lot of engineers over the years, including a team of
-        25 frontend engineers at Jet and 9 engineers at Detect. I&#39;m happy to
-        help with:
+        My career has been straight down the individual contributor path, so
+        that&#39;s where I can help the most: becoming a great IC with a robust
+        skillset that companies want. I&#39;ve had more than 20 mentees get
+        promoted, get hired, or change careers entirely. I can help with:
       </p>
       <ul>
         <li>Growing into a senior or staff role</li>
-        <li>Moving into tech leadership (or deciding whether you want to)</li>
+        <li>Leading your team and establishing best practices</li>
         <li>
           Writing better code: <Link to="/readability/">readability</Link>,{" "}
           <Link to="/testing/">testing</Link>,{" "}
           <Link to="/code-review/">code review</Link>, and{" "}
           <Link to="/refactoring/">refactoring</Link>
         </li>
-        <li>React and frontend fundamentals</li>
-        <li>Job searches, interviews, and career decisions</li>
+        <li>Interview prep, including mock interviews and system design</li>
+        <li>Resumes and job searches</li>
       </ul>
       <p>
-        We can do a single conversation or meet regularly, whichever works
-        better for you.
+        My approach is hands-on and iterative. The best way to learn is by
+        doing, with tight and accurate feedback loops. My goal is to
+        &quot;graduate&quot; you out of needing me as quickly as possible, so
+        that you can start mentoring people of your own.
       </p>
       <p>
-        <a href={mentorshipMail}>Email me about mentorship</a>
+        I mentor through <a href={mentorCruiseUrl}>MentorCruise</a>, where you
+        can book a free intro call. You can also{" "}
+        <a href={mentorshipMail}>email me about mentorship</a>.
       </p>
 
       <hr />

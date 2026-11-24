@@ -38,18 +38,17 @@ const PseudorandomPage = ({ data, location }) => {
       <p style={taglineStyle}>{"// we build user-friendly tools with AI"}</p>
 
       <p>
-        Pseudorandom is a small software consultancy. We help companies build
-        tools and products with AI that people find easy to use.
+        Pseudorandom is a small software consultancy. We build apps and tools
+        that people find easy to use, and we use AI to build them. AI is part of
+        every step of how we work, which means you get a working product sooner.
+        When it helps, we build AI into the product itself, too.
       </p>
 
       <h4>What do we do?</h4>
       <ul>
-        <li>
-          Build internal tools that use AI to speed up work your team already
-          does
-        </li>
+        <li>Build new apps and internal tools, quickly</li>
         <li>Add AI features to an existing product</li>
-        <li>Turn an AI prototype into something you can ship</li>
+        <li>Turn a prototype into something you can ship</li>
         <li>
           Set up testing and evaluation, so you know your AI features work and
           keep working as models change
@@ -58,26 +57,28 @@ const PseudorandomPage = ({ data, location }) => {
 
       <h4>Why us?</h4>
       <p>
-        Plenty of teams can call an LLM API. Fewer can build something around it
-        that people want to use. Most of our background is in building tools for
-        people who aren&#39;t engineers -- remote operators at Nuro, scientists
-        at Quantum-Si, customers taking an at-home COVID test at Detect, and
-        contributors to Google Maps. If a tool is confusing, people won&#39;t
-        use it, no matter how clever the technology behind it is.
+        Plenty of teams can use AI to write code or call an LLM API. Fewer can
+        use it to build something people want to use. Most of our background is
+        in building tools for people who aren&#39;t engineers -- remote
+        operators at Nuro, scientists at Quantum-Si, customers taking an at-home
+        COVID test at Detect, and contributors to Google Maps. If a tool is
+        confusing, people won&#39;t use it, no matter how clever the technology
+        behind it is.
       </p>
 
       <h4>How do we work?</h4>
       <p>
-        We start with the people using the tool, and pick the AI to fit them
-        (see the{" "}
+        We start with the people using the tool, and pick the technology to fit
+        them (see the{" "}
         <Link to="/principle-of-least-surprise/">
           principle of least surprise
         </Link>
-        ). We ship small pieces early so you can see progress and give feedback.
-        We write <Link to="/testing/">tests</Link> and{" "}
+        ). AI writes a lot of our code, but we design it, review it, and test
+        it. Because we build with AI, we can ship small pieces early so you can
+        see progress and give feedback. We write{" "}
+        <Link to="/testing/">tests</Link> and{" "}
         <Link to="/readability/">readable code</Link>, so your team can own what
-        we build once we&#39;re done. And if AI isn&#39;t the right fit for your
-        problem, we&#39;ll say so.
+        we build once we&#39;re done.
       </p>
 
       <p>
