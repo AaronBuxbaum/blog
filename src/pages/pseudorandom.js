@@ -32,88 +32,61 @@ const PseudorandomPage = ({ data, location }) => {
       <SEO
         title="Pseudorandom LLC"
         keywords={keywords}
-        description="Pseudorandom LLC builds user-friendly tools with AI: internal tools, AI features, and prototypes that people actually want to use."
+        description="Pseudorandom LLC builds user-friendly tools with AI."
       />
       <h1>Pseudorandom LLC</h1>
       <p style={taglineStyle}>{"// we build user-friendly tools with AI"}</p>
 
       <p>
-        Most AI features are a chat box bolted onto a product. The model is the
-        easy part now. The hard part is everything around it: figuring out
-        where AI actually helps, designing an interface people trust, handling
-        the cases where the model is wrong, and shipping something that holds
-        up in production. That&#39;s what we do.
+        Pseudorandom is a small software consultancy. We help companies build
+        tools and products with AI that people find easy to use.
       </p>
 
-      <h4>What we build</h4>
+      <h4>What do we do?</h4>
       <ul>
         <li>
-          <strong>Internal tools.</strong> AI that fits into the way your team
-          already works, so the people using it every day get faster instead of
-          getting a new thing to babysit.
+          Build internal tools that use AI to speed up work your team already
+          does
         </li>
+        <li>Add AI features to an existing product</li>
+        <li>Turn an AI prototype into something you can ship</li>
         <li>
-          <strong>AI features in your product.</strong> Built so your users
-          understand what the AI is doing, can see why, and can easily correct
-          it when it&#39;s wrong.
-        </li>
-        <li>
-          <strong>Prototypes that become products.</strong> Getting from
-          &quot;we should try AI for this&quot; to something real people can
-          use, quickly, and then making it solid.
-        </li>
-        <li>
-          <strong>Evaluation and guardrails.</strong> Tests and measurements so
-          you know whether the thing works, and keep knowing as models and
-          prompts change.
+          Set up testing and evaluation, so you know your AI features work and
+          keep working as models change
         </li>
       </ul>
 
-      <h4>How we work</h4>
-      <ul>
-        <li>
-          <strong>Start with the user, not the model.</strong> A tool is only
-          useful if people use it. We design around the workflow first and
-          choose the AI to fit it, following the{" "}
-          <Link to="/principle-of-least-surprise/">
-            principle of least surprise
-          </Link>
-          .
-        </li>
-        <li>
-          <strong>Ship early, ship often.</strong> Small increments in front of
-          real users, not a big reveal at the end.
-        </li>
-        <li>
-          <strong>Tested and maintainable.</strong> AI doesn&#39;t get a pass on{" "}
-          <Link to="/testing/">testing</Link> or{" "}
-          <Link to="/readability/">readable code</Link>. You should be able to
-          own what we build after we hand it off.
-        </li>
-        <li>
-          <strong>Honest about fit.</strong> Sometimes the right answer is a
-          better form, not a language model. We&#39;ll tell you.
-        </li>
-      </ul>
-
-      <h4>Background</h4>
+      <h4>Why us?</h4>
       <p>
-        Pseudorandom is led by <Link to="/hire-me/">Aaron Buxbaum</Link>, a
-        staff engineer with over a decade of experience building tools for
-        people who aren&#39;t engineers: remote operators and mission control
-        for autonomous vehicles at Nuro, platforms for scientists at Quantum-Si,
-        a consumer app and website through FDA authorization at Detect, and
-        contributor tools for Google Maps. Add a master&#39;s in Analytics and
-        an education in machine learning, and building good tools with AI is
-        the natural next step.
+        Plenty of teams can call an LLM API. Fewer can build something around it
+        that people want to use. Most of our background is in building tools for
+        people who aren&#39;t engineers -- remote operators at Nuro, scientists
+        at Quantum-Si, customers taking an at-home COVID test at Detect, and
+        contributors to Google Maps. If a tool is confusing, people won&#39;t
+        use it, no matter how clever the technology behind it is.
       </p>
 
-      <h4>Work with us</h4>
+      <h4>How do we work?</h4>
       <p>
-        Tell us what you&#39;re trying to build, or what&#39;s slowing your team
-        down, and we&#39;ll tell you honestly whether AI can help.
+        We start with the people using the tool, and pick the AI to fit them
+        (see the{" "}
+        <Link to="/principle-of-least-surprise/">
+          principle of least surprise
+        </Link>
+        ). We ship small pieces early so you can see progress and give feedback.
+        We write <Link to="/testing/">tests</Link> and{" "}
+        <Link to="/readability/">readable code</Link>, so your team can own what
+        we build once we&#39;re done. And if AI isn&#39;t the right fit for your
+        problem, we&#39;ll say so.
       </p>
+
       <p>
+        Pseudorandom is led by <Link to="/hire-me/">Aaron Buxbaum</Link>.
+      </p>
+
+      <h4>Get in touch</h4>
+      <p>
+        Send us an email with a little about what you&#39;re working on:{" "}
         <a href={contactMail}>
           <strong>{social.email}</strong>
         </a>
