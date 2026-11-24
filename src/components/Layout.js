@@ -7,6 +7,31 @@ const headerStyle = {
   marginTop: 0,
 };
 
+const navStyle = {
+  fontFamily: `monospace`,
+  marginTop: rhythm(-1),
+  marginBottom: rhythm(1.5),
+};
+
+const navLinks = [
+  { to: `/`, label: `blog` },
+  { to: `/hire-me/`, label: `hire me` },
+  { to: `/pseudorandom/`, label: `pseudorandom llc` },
+];
+
+const Nav = () => (
+  <nav style={navStyle}>
+    {navLinks.map(({ to, label }, index) => (
+      <React.Fragment key={to}>
+        {index > 0 && ` · `}
+        <Link to={to} style={{ boxShadow: `none` }}>
+          {label}
+        </Link>
+      </React.Fragment>
+    ))}
+  </nav>
+);
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props;
@@ -54,6 +79,7 @@ class Layout extends React.Component {
         }}
       >
         {header}
+        <Nav />
         {children}
         <footer>© {new Date().getFullYear()}</footer>
       </div>
