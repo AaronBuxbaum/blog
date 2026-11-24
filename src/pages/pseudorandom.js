@@ -73,7 +73,7 @@ const PseudorandomPage = ({ data, location }) => {
       <h4>Why us?</h4>
       <p>
         We&#39;ve spent our careers building software for people who aren&#39;t
-        engineers: tools for the remote operators of autonomous vehicles,
+        engineers: remote assist tools for robotaxis and autonomous trucks,
         platforms for scientists at a biotech startup, the app for an at-home
         COVID test, and features for Google Maps. We&#39;ve done it at companies
         where it had to work, through an IPO and FDA authorization. Pseudorandom
