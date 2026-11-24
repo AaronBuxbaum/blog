@@ -1,4 +1,7 @@
+const adapter = require(`gatsby-adapter-netlify`).default
+
 module.exports = {
+  adapter: adapter(),
   siteMetadata: {
     title: `pseudorandom`,
     author: `Aaron Buxbaum`,
