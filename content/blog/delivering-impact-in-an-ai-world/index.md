@@ -25,7 +25,7 @@ So, when a mentee asks about impact, I tell them to optimize for how quickly the
 
 Like everything, this has tradeoffs, and I try to be clear with mentees about where it stops.
 
-It doesn't mean shipping code you don't understand. As we covered in [Code Review for AI-Written Code](/code-review-for-ai-written-code/), the person who prompted the agent owns the result, and that hasn't changed. Moving fast only works if you can tell when something is wrong.
+It doesn't mean shipping code you don't understand. As I covered in [Code Review for AI-Written Code](/code-review-for-ai-written-code/), the person who prompted the agent owns the result, and that hasn't changed. Moving fast only works if you can tell when something is wrong.
 
 It also doesn't mean no tests. It means being picky about which ones. Anything where a mistake is expensive or can't be taken back -- money, people's data, anything safety-related -- still deserves the full treatment. So does a bug that has already happened once, since a test is the cheapest way to make sure it doesn't happen twice. What I've stopped recommending is chasing complete coverage up front on a feature that might be rewritten or deleted next week.
 
