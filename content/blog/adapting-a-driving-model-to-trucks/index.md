@@ -3,11 +3,9 @@ title: Adapting a Driving Model to Trucks
 date: "2026-11-25T04:14:03.284Z"
 ---
 
-In September, my team at Stack AV put a paper on arXiv called [Data-Efficient Adaptation of a Driving VLA to Class 8 Trucks](https://arxiv.org/abs/2609.38570). It's a collaboration with the University of Southern California, and I'm the second of four authors.
+In September, we put a paper on arXiv called [Data-Efficient Adaptation of a Driving VLA to Class 8 Trucks](https://arxiv.org/abs/2609.38570). It's a collaboration between Stack AV and the University of Southern California.
 
-I'd like to be clear about who did what. Satyajeet Das is the first author, and he did all of the direct work. I'm his manager. The other two authors are Niels Joubert, who is my manager, and Gaurav Sukhatme, who is Satyajeet's advisor at USC. So, when I say "we" below, please read it as "mostly Satyajeet".
-
-Papers are written for other researchers, so here's my attempt at explaining what's in this one for everyone else.
+Papers are written for other researchers, so here's our attempt at explaining what's in this one for everyone else.
 
 ## The problem
 
@@ -25,7 +23,7 @@ The reasoning is that a truck and a car are looking at the same road. What a con
 
 On scenarios that the model had not seen, this cut the error in the predicted path over 6.4 seconds by roughly 56% compared to the off-the-shelf model.
 
-The more interesting result, to me, is the comparison with general truck data. With the same number of examples, training on the targeted scenarios gave 19-26% lower error than training on ordinary truck driving. The targeted model also stayed competitive with one that was trained on about 65 times as many general truck scenarios. In other words, which examples we picked mattered a lot more than how many we had.
+The more interesting result, to us, is the comparison with general truck data. With the same number of examples, training on the targeted scenarios gave 19-26% lower error than training on ordinary truck driving. The targeted model also stayed competitive with one that was trained on about 65 times as many general truck scenarios. In other words, which examples we picked mattered a lot more than how many we had.
 
 ## Steer
 
@@ -39,8 +37,8 @@ This reduced the error over the full 6.4 seconds by a further 13.9% on average, 
 
 Like everything, this has caveats. The results are _open-loop_, which means that we compare the path the model predicts against the path that an expert driver actually took in a recorded scenario. That's a different thing from letting the model drive, where a small mistake changes what the cameras see next. The paper also looks at two families of scenarios, on highways. It's a result about how to adapt a model efficiently, and it shouldn't be read as a claim about a finished driving system.
 
-## Why I think it's worth reading
+## Why we think it's worth reading
 
-What I like about this result is that it lines up with things I already believed about software in general. A small change to a small part of the system is easier to reason about than retraining all of it. And a few hundred examples taken from the cases that actually go wrong are worth more than a mountain of examples from the cases that already work, which is the same argument I made about [evals](/evals-are-just-tests/).
+What we like about this result is that it lines up with things we already believed about software in general. A small change to a small part of the system is easier to reason about than retraining all of it. And a few hundred examples taken from the cases that actually go wrong are worth more than a mountain of examples from the cases that already work, which is the same argument as in [Evals Are Just Tests](/evals-are-just-tests/).
 
 If you'd like the details, the [paper](https://arxiv.org/abs/2609.38570) and the [project site](https://truckvla.github.io) have all of them.
