@@ -1,6 +1,6 @@
 ---
 title: Instant Audio Switching in the Browser
-date: "2026-11-25T04:12:03.284Z"
+date: "2025-10-15T22:12:03.284Z"
 ---
 
 I recently did some contract work for Fortell, a company that makes hearing aids which use a neural network to pull speech out of background noise. The problem they came to me with was a simple one to state: how do you show someone on a website what it's like to put the hearing aids on?
@@ -28,6 +28,8 @@ ffmpeg -i scene.mp4 -i off.wav -i on.wav \
   -filter_complex "[1:a][2:a]join=inputs=2:channel_layout=stereo[a]" \
   -map 0:v -map "[a]" -c:v copy demo.mp4
 ```
+
+![Two mono audio tracks stored as the left and right channels of one video file](file.svg)
 
 The result is a perfectly ordinary video file. Both versions of the audio are inside it, and since they're part of the same track, they can't drift apart from each other or from the video.
 
@@ -58,9 +60,11 @@ const setEnhanced = (enabled) => {
 };
 ```
 
+![The stereo track is split, each channel gets its own gain, and both gains feed both speakers](routing.svg)
+
 This is a simplified sketch and not the production code, but it's the whole idea. One volume is at 1 and the other is at 0, so only one version is audible at a time, and it comes out of both speakers. Switching is just swapping those two numbers.
 
-Nothing is loaded, buffered, or restarted when that happens. Both tracks are already decoded and flowing through the graph the entire time, and we're only choosing which one to listen to. The patent application describes the switch as taking less than a millisecond, and in practice there's no gap to hear, and the video never notices.
+Nothing is loaded, buffered, or restarted when that happens. Both tracks are already decoded and flowing through the graph the entire time, and we're only choosing which one to listen to. The switch takes less than a millisecond, with no gap and no click, and the video never notices.
 
 ## A few details that matter
 
@@ -80,4 +84,4 @@ The file also depends on the player. Anything that plays it without the routing 
 
 For what it's worth, the same approach should work anywhere that two versions of the same audio need to be compared against the same picture: before and after noise reduction on a podcast, a raw mix against a mastered one, or a video with and without audio description.
 
-What I like the most about this solution is how little there is to it. The alternatives involve streaming servers and synchronization logic, and this one is a single file and about twenty lines of routing. I wrote recently about [simplicity](/simplicity/) being the hard part of the job, and this was a good reminder.
+What I like the most about this solution is how little there is to it. The alternatives involve streaming servers and synchronization logic, and this one is a single file and about twenty lines of routing. Simplicity tends to be the hard part of the job, and this was a good reminder.
