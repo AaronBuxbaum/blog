@@ -73,8 +73,9 @@ const ConsultingPage = ({ data, location }) => {
           test. It went through FDA authorization and sold over a million tests.
         </li>
         <li>
-          In autonomous vehicles, I&#39;ve led frontend engineering across a
-          company and worked on the ML systems that drive a robotaxi.
+          In autonomous vehicles, I&#39;ve worked on remote assist for robotaxis
+          at Nuro, ML infrastructure for robotaxis at Cruise, and remote assist
+          for autonomous trucking at StackAV.
         </li>
       </ul>
       <p>
