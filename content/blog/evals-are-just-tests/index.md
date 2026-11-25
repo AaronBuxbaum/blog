@@ -61,4 +61,4 @@ With a prompt, it's easy to go the other way. If we only have five cases, we can
 
 If you have an AI feature in production with no evals, we suggest starting small. Pull twenty real inputs from your logs, write down what the right answer is for each one, and put them in a file next to the prompt. Run them every time the prompt or the model changes. It takes an afternoon, and it's a lot better than nothing.
 
-For what it's worth, the teams we've seen struggle with AI features usually aren't missing a better model or a cleverer prompt. They're missing the tests, and that part of the job hasn't changed at all.
+For what it's worth, when we see a team struggling with an AI feature, a better model or a cleverer prompt is rarely what they need. Usually, they need the tests, which is the same answer we would have given in 2019.
