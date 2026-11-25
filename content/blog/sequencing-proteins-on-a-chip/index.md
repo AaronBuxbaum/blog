@@ -1,11 +1,11 @@
 ---
 title: Sequencing Proteins on a Chip
-date: "2026-11-25T04:10:03.284Z"
+date: "2022-10-13T22:12:03.284Z"
 ---
 
-Before I worked on autonomous vehicles, I worked at Quantum-Si, a company that builds a benchtop machine for sequencing proteins. In 2022, the team published the core of that work in _Science_ as [Real-time dynamic single-molecule protein sequencing on an integrated semiconductor device](https://www.science.org/doi/full/10.1126/science.abo7651). There are around eighty authors on it, and I'm one of them -- I did much of the software engineering.
+This week, a paper that I'm an author on was published in _Science_: [Real-time dynamic single-molecule protein sequencing on an integrated semiconductor device](https://www.science.org/doi/full/10.1126/science.abo7651). It comes out of Quantum-Si, a company that builds a benchtop machine for sequencing proteins. There are around eighty authors on it, and I did much of the software engineering.
 
-I've never written about it here. I'm not a biochemist, and the paper is not light reading, but I think it's a great example of what software looks like when it's one part of a much larger piece of science. So, here's my attempt at explaining it for people who write code for a living.
+I'm not a biochemist, and the paper is not light reading, but I think it's a great example of what software looks like when it's one part of a much larger piece of science. So, here's my attempt at explaining it for people who write code for a living.
 
 ## Why proteins
 
@@ -35,16 +35,16 @@ Second, the pulses have to be grouped into segments. As long as the same amino a
 
 Third, each segment has to be identified, based on its dye and its pulse durations, and the sequence of segments has to be matched against the peptides that it could have come from.
 
-If you've read my posts on [testing](/testing/), you can probably guess what I think the hard part is. In most software, there's a right answer, and a test can check for it. Here, the input is physical. Every well is a little different, single molecules behave randomly (the paper points out that each one gets cut at different times, so no two signals line up), and "correct" is a statistical statement about thousands of wells. Language models have the same property, which is why I think the approach in [Evals Are Just Tests](/evals-are-just-tests/) applies well beyond AI.
+If you've read my posts on [testing](/testing/), you can probably guess what I think the hard part is. In most software, there's a right answer, and a test can check for it. Here, the input is physical. Every well is a little different, single molecules behave randomly (the paper points out that each one gets cut at different times, so no two signals line up), and "correct" is a statistical statement about thousands of wells. A test for software like this can't simply assert on an answer, and has to ask whether the results across many wells fall within the range that we expect.
 
-## What it showed, and what it didn't
+## What it shows, and what it doesn't
 
 The paper shows that the method can read peptides of different lengths and compositions, tell apart two peptides that differ by a single amino acid, detect some chemical modifications, pick out peptides from a mixture, and read peptides cut from real human proteins.
 
-It's also upfront about the limits. In the paper, the recognizers covered seven of the twenty amino acids, which make up about 36.5% of the amino acids in human proteins. That's less of a problem than it sounds like, since most uses only need enough of a pattern to match against a list of known proteins, and the paper estimates that 96.7% of human proteins contain at least one peptide that could be mapped that way. Still, reading every amino acid in an unknown protein was left as future work.
+It's also upfront about the limits. For now, the recognizers cover seven of the twenty amino acids, which make up about 36.5% of the amino acids in human proteins. That's less of a problem than it sounds like, since most uses only need enough of a pattern to match against a list of known proteins, and the paper estimates that 96.7% of human proteins contain at least one peptide that could be mapped that way. Still, reading every amino acid in an unknown protein is left as future work.
 
 ## What I took from it
 
-What stands out to me, looking back, is how much of modern science is software. The chemistry and the chip are what make the measurement possible, and I can't take any credit for those. However, the instrument doesn't produce an answer. It produces a signal, and everything between that signal and a result a scientist can use is code that someone has to write, test, and keep running.
+What stands out to me is how much of modern science is software. The chemistry and the chip are what make the measurement possible, and I can't take any credit for those. However, the instrument doesn't produce an answer. It produces a signal, and everything between that signal and a result a scientist can use is code that someone has to write, test, and keep running.
 
 For what it's worth, I'd recommend that kind of work to any software engineer who gets the chance. Being the person in the room who knows the least about the subject is uncomfortable, and it's also a very good way to learn.
