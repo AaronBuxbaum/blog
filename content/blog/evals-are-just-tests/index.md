@@ -43,6 +43,8 @@ for (const { input, expected } of cases) {
 }
 ```
 
+![Four eval cases, each run ten times, with a pass rate for each](runs.svg)
+
 That's the whole idea, and you don't need a framework to get started. What counts as passing is up to you. For something like a due date, I'd want ten out of ten, and a nine is a bug. For something softer, like the tone of a summary, a lower bar might be fine, as long as we know what it is and notice when it drops.
 
 The second difference is that checking the output can be hard. A date either matches or it doesn't, but there's no `===` for "is this a good summary?" I try to turn as much as possible into checks that plain code can do: is it under 100 words, does it mention the customer's name, is it valid JSON, does it avoid promising a refund. This is one more reason to have the model [fill in a shape](/least-surprise-in-ai-tools/) instead of writing a paragraph, since a shape is far easier to test. For what's left over, you can ask a second model to grade the output against a short rubric. That works reasonably well, but the grader is a model too, so I read a sample of its grades by hand every so often to make sure I still agree with it.

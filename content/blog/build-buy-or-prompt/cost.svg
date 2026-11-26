@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t">
+  <title id="t">Yearly cost of each option: by hand 62,500 dollars, buy 34,250, build 32,000, prompt 55,250 at 2 percent wrong and 17,750 at 0.5 percent wrong</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="300" fill="#fff"/>
+  <text class="small" x="20" y="26" text-anchor="start">cost per year, using the made-up numbers above</text>
+  <text x="176" y="64" text-anchor="end">by hand</text>
+  <rect class="barb" x="188" y="44" width="350.0" height="30" rx="0"/>
+  <text x="546.0" y="64" text-anchor="start">$62,500</text>
+  <text x="176" y="106" text-anchor="end">buy</text>
+  <rect class="barb" x="188" y="86" width="191.8" height="30" rx="0"/>
+  <text x="387.8" y="106" text-anchor="start">$34,250</text>
+  <text x="176" y="148" text-anchor="end">build, year one</text>
+  <rect class="barb" x="188" y="128" width="179.2" height="30" rx="0"/>
+  <text x="375.2" y="148" text-anchor="start">$32,000</text>
+  <text x="176" y="190" text-anchor="end">prompt, 2% wrong</text>
+  <rect class="barb" x="188" y="170" width="29.4" height="30" rx="0"/>
+  <rect class="baro" x="217.4" y="170" width="280.0" height="30" rx="0"/>
+  <text x="505.4" y="190" text-anchor="start">$55,250</text>
+  <text x="176" y="232" text-anchor="end">prompt, 0.5% wrong</text>
+  <rect class="barb" x="188" y="212" width="29.4" height="30" rx="0"/>
+  <rect class="baro" x="217.4" y="212" width="70.0" height="30" rx="0"/>
+  <text x="295.4" y="232" text-anchor="start">$17,750</text>
+  <rect class="barb" x="188" y="262" width="14" height="14" rx="0"/>
+  <text class="small" x="208" y="274" text-anchor="start">work, tools and building</text>
+  <rect class="baro" x="400" y="262" width="14" height="14" rx="0"/>
+  <text class="small" x="420" y="274" text-anchor="start">cleaning up mistakes</text>
+</svg>

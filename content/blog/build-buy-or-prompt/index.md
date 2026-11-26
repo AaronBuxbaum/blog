@@ -33,6 +33,8 @@ Let's say that a mistake takes an hour to sort out, between the confused custome
 
 If the model is wrong 0.5% of the time, the mistakes cost $12,500, and the tool saves about $45,000 a year. That's a great result!
 
+![Cost per year for doing the task by hand, buying, building, and prompting at two error rates](cost.svg)
+
 The difference between a tool that's barely worth having and a tool that's a great investment is a point and a half of error rate. The price of the model hardly matters by comparison. This is why I keep going on about [evals](/evals-are-just-tests/): without them, the most important number in the calculation is a guess.
 
 To be fair, people make mistakes too, and the by-hand number above should really include them. It's worth measuring how often that happens before deciding that 2% is unacceptable. Most teams don't know their own error rate, either.
