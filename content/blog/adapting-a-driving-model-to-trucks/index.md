@@ -19,6 +19,8 @@ The obvious fix is to retrain the model on a huge amount of truck driving. That 
 
 Alpamayo has two parts. There's a vision-language backbone with about 8.2 billion parameters, which is the part that understands the scene, and an action expert with about 2.3 billion, which is the part that turns that understanding into a trajectory. We left the backbone frozen and fine-tuned only the action side, on a few hundred real highway scenarios from construction zones and accidents.
 
+![The backbone is frozen, the action expert is fine-tuned, and a small steering module is added on top](model.svg)
+
 The reasoning is that a truck and a car are looking at the same road. What a construction zone looks like doesn't change with the vehicle, but what to do about it does.
 
 On scenarios that the model had not seen, this cut the error in the predicted path over 6.4 seconds by roughly 56% compared to the off-the-shelf model.
@@ -32,6 +34,8 @@ The action expert builds a trajectory in a series of small steps, starting from 
 It's a correction that's added on top, with a single strength setting, and turning that setting to zero gives back exactly the model from the first stage. Since each nudged step is fed back into the model for the next one, a small correction early on carries through the rest of the trajectory. It's trained on the same logged examples, so it needs no extra data.
 
 This reduced the error over the full 6.4 seconds by a further 13.9% on average, and by 16.5% at the end point of the path.
+
+![Path error over 6.4 seconds for the off-the-shelf model, after adapting, and after steering](error.svg)
 
 ## What it doesn't show
 

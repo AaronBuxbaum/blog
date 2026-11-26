@@ -23,6 +23,8 @@ The second kind are _aminopeptidases_, which are enzymes that cut the end amino 
 
 What I find clever is where the information comes from. One recognizer can bind to several different amino acids, but it holds on to each of them for a different amount of time. For one of the recognizers in the paper, a typical flash lasted about 2.5 seconds on phenylalanine, 0.7 seconds on tyrosine, and 0.3 seconds on tryptophan. So, the identity of the amino acid is in the rhythm of the flashing, and not only in which dye is lit up.
 
+![Light from one well over time, with long, short, and medium flashes separated by cuts](trace.svg)
+
 The chip itself is just as unusual. Most instruments tell dyes apart by color, which needs optical filters. This one tells them apart by timing: after each pulse of the laser, a dye keeps glowing for a few nanoseconds, and different dyes fade at different rates. The chip measures how much light arrives early versus late after each pulse, and that ratio identifies the dye. Since it's timing the light anyway, it can also ignore the laser itself, which is what lets all of this fit on a chip in a box that sits on a bench.
 
 ## Where the software comes in
