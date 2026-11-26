@@ -21,11 +21,19 @@ The first kind are _recognizers_. These are proteins that have been engineered t
 
 The second kind are _aminopeptidases_, which are enzymes that cut the end amino acid off of the peptide. Every so often one of them does its job, a new amino acid is exposed, and the pattern of flashes changes.
 
+![A peptide anchored at the bottom of a well, with a recognizer on its end amino acid and an aminopeptidase nearby](well.svg)
+
 What I find clever is where the information comes from. One recognizer can bind to several different amino acids, but it holds on to each of them for a different amount of time. For one of the recognizers in the paper, a typical flash lasted about 2.5 seconds on phenylalanine, 0.7 seconds on tyrosine, and 0.3 seconds on tryptophan. So, the identity of the amino acid is in the rhythm of the flashing, and not only in which dye is lit up.
 
 ![Light from one well over time, with long, short, and medium flashes separated by cuts](trace.svg)
 
+The paper uses three recognizers, and between them they cover seven amino acids, each with its own typical flash length.
+
+![Typical flash length for each of the seven amino acids, grouped by recognizer](durations.svg)
+
 The chip itself is just as unusual. Most instruments tell dyes apart by color, which needs optical filters. This one tells them apart by timing: after each pulse of the laser, a dye keeps glowing for a few nanoseconds, and different dyes fade at different rates. The chip measures how much light arrives early versus late after each pulse, and that ratio identifies the dye. Since it's timing the light anyway, it can also ignore the laser itself, which is what lets all of this fit on a chip in a box that sits on a bench.
+
+![Two dyes fading at different rates after a laser pulse, with two collection windows](bins.svg)
 
 ## Where the software comes in
 
@@ -37,6 +45,8 @@ Second, the pulses have to be grouped into segments. As long as the same amino a
 
 Third, each segment has to be identified, based on its dye and its pulse durations, and the sequence of segments has to be matched against the peptides that it could have come from.
 
+![A noisy signal turned into flashes, then segments, then named amino acids](pipeline.svg)
+
 If you've read my posts on [testing](/testing/), you can probably guess what I think the hard part is. In most software, there's a right answer, and a test can check for it. Here, the input is physical. Every well is a little different, single molecules behave randomly (the paper points out that each one gets cut at different times, so no two signals line up), and "correct" is a statistical statement about thousands of wells. A test for software like this can't simply assert on an answer, and has to ask whether the results across many wells fall within the range that we expect.
 
 ## What it shows, and what it doesn't
@@ -44,6 +54,8 @@ If you've read my posts on [testing](/testing/), you can probably guess what I t
 The paper shows that the method can read peptides of different lengths and compositions, tell apart two peptides that differ by a single amino acid, detect some chemical modifications, pick out peptides from a mixture, and read peptides cut from real human proteins.
 
 It's also upfront about the limits. For now, the recognizers cover seven of the twenty amino acids, which make up about 36.5% of the amino acids in human proteins. That's less of a problem than it sounds like, since most uses only need enough of a pattern to match against a list of known proteins, and the paper estimates that 96.7% of human proteins contain at least one peptide that could be mapped that way. Still, reading every amino acid in an unknown protein is left as future work.
+
+![The seven recognizable amino acids out of twenty, and what share of human proteins they cover](coverage.svg)
 
 ## What I took from it
 

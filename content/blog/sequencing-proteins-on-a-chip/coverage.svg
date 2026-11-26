@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" width="640" height="290" role="img" aria-labelledby="t">
+  <title id="t">Seven of the twenty amino acids can be recognized, which is 36.5 percent of the amino acids in human proteins, and 96.7 percent of human proteins have at least one peptide that can be mapped</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="290" fill="#fff"/>
+  <text class="small" x="20" y="26" text-anchor="start">the twenty amino acids, and the seven with a recognizer</text>
+  <rect class="box" x="20" y="40" width="51" height="42" rx="4"/>
+  <text x="45.5" y="66" text-anchor="middle">A</text>
+  <rect class="box orange" x="81" y="40" width="51" height="42" rx="4"/>
+  <text x="106.5" y="66" text-anchor="middle">R</text>
+  <rect class="box" x="142" y="40" width="51" height="42" rx="4"/>
+  <text x="167.5" y="66" text-anchor="middle">N</text>
+  <rect class="box" x="203" y="40" width="51" height="42" rx="4"/>
+  <text x="228.5" y="66" text-anchor="middle">D</text>
+  <rect class="box" x="264" y="40" width="51" height="42" rx="4"/>
+  <text x="289.5" y="66" text-anchor="middle">C</text>
+  <rect class="box" x="325" y="40" width="51" height="42" rx="4"/>
+  <text x="350.5" y="66" text-anchor="middle">Q</text>
+  <rect class="box" x="386" y="40" width="51" height="42" rx="4"/>
+  <text x="411.5" y="66" text-anchor="middle">E</text>
+  <rect class="box" x="447" y="40" width="51" height="42" rx="4"/>
+  <text x="472.5" y="66" text-anchor="middle">G</text>
+  <rect class="box" x="508" y="40" width="51" height="42" rx="4"/>
+  <text x="533.5" y="66" text-anchor="middle">H</text>
+  <rect class="box orange" x="569" y="40" width="51" height="42" rx="4"/>
+  <text x="594.5" y="66" text-anchor="middle">I</text>
+  <rect class="box orange" x="20" y="92" width="51" height="42" rx="4"/>
+  <text x="45.5" y="118" text-anchor="middle">L</text>
+  <rect class="box" x="81" y="92" width="51" height="42" rx="4"/>
+  <text x="106.5" y="118" text-anchor="middle">K</text>
+  <rect class="box" x="142" y="92" width="51" height="42" rx="4"/>
+  <text x="167.5" y="118" text-anchor="middle">M</text>
+  <rect class="box orange" x="203" y="92" width="51" height="42" rx="4"/>
+  <text x="228.5" y="118" text-anchor="middle">F</text>
+  <rect class="box" x="264" y="92" width="51" height="42" rx="4"/>
+  <text x="289.5" y="118" text-anchor="middle">P</text>
+  <rect class="box" x="325" y="92" width="51" height="42" rx="4"/>
+  <text x="350.5" y="118" text-anchor="middle">S</text>
+  <rect class="box" x="386" y="92" width="51" height="42" rx="4"/>
+  <text x="411.5" y="118" text-anchor="middle">T</text>
+  <rect class="box orange" x="447" y="92" width="51" height="42" rx="4"/>
+  <text x="472.5" y="118" text-anchor="middle">W</text>
+  <rect class="box orange" x="508" y="92" width="51" height="42" rx="4"/>
+  <text x="533.5" y="118" text-anchor="middle">Y</text>
+  <rect class="box orange" x="569" y="92" width="51" height="42" rx="4"/>
+  <text x="594.5" y="118" text-anchor="middle">V</text>
+  <text class="small" x="20" y="172" text-anchor="start">share of the amino acids in human proteins that are one of the seven</text>
+  <rect class="box" x="20" y="180" width="500" height="26" rx="0"/>
+  <rect class="baro" x="20" y="180" width="182" height="26" rx="0"/>
+  <text x="530" y="198" text-anchor="start">36.5%</text>
+  <text class="small" x="20" y="236" text-anchor="start">share of human proteins with at least one peptide that can be mapped</text>
+  <rect class="box" x="20" y="244" width="500" height="26" rx="0"/>
+  <rect class="baro" x="20" y="244" width="484" height="26" rx="0"/>
+  <text x="530" y="262" text-anchor="start">96.7%</text>
+</svg>
