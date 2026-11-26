@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t">
+  <title id="t">The stereo track is split into two channels, each channel passes through its own gain, and both gains feed both speakers</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .off { fill: #eef3fb; }
+      .on { fill: #fdf1e3; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .lo { stroke: #3b6fb6; }
+      .lon { stroke: #c9731a; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrow); }
+      .frame { fill: none; stroke: #222; stroke-width: 1.5; stroke-dasharray: 6 4; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="300" fill="#fff"/>
+  <rect class="box" x="10" y="120" width="80" height="44" rx="4"/>
+  <text x="50.0" y="146.0" text-anchor="middle">video</text>
+  <rect class="box" x="130" y="120" width="90" height="44" rx="4"/>
+  <text x="175.0" y="146.0" text-anchor="middle">splitter</text>
+  <rect class="box off" x="280" y="40" width="130" height="48" rx="4"/>
+  <text x="345.0" y="62.0" text-anchor="middle">gain</text>
+  <text class="small" x="345.0" y="77.0" text-anchor="middle">AI off</text>
+  <rect class="box on" x="280" y="196" width="130" height="48" rx="4"/>
+  <text x="345.0" y="218.0" text-anchor="middle">gain</text>
+  <text class="small" x="345.0" y="233.0" text-anchor="middle">AI on</text>
+  <rect class="box" x="470" y="120" width="80" height="44" rx="4"/>
+  <text x="510.0" y="146.0" text-anchor="middle">merger</text>
+  <text x="630" y="124" text-anchor="end">left</text>
+  <text class="small" x="630" y="138" text-anchor="end">speaker</text>
+  <text x="630" y="158" text-anchor="end">right</text>
+  <text class="small" x="630" y="172" text-anchor="end">speaker</text>
+  <path class="line" d="M 90 142 L 128 142"/>
+  <path class="line lo" d="M 220 132 L 250 132 L 250 64 L 278 64"/>
+  <path class="line lon" d="M 220 152 L 250 152 L 250 220 L 278 220"/>
+  <text class="small" x="244" y="56" text-anchor="end">left</text>
+  <text class="small" x="244" y="238" text-anchor="end">right</text>
+  <path class="line lo" d="M 410 56 L 450 56 L 450 128 L 468 128"/>
+  <path class="line lo" d="M 410 72 L 436 72 L 436 152 L 468 152"/>
+  <path class="line lon" d="M 410 212 L 436 212 L 436 160 L 468 160"/>
+  <path class="line lon" d="M 410 228 L 450 228 L 450 136 L 468 136"/>
+  <path class="line" d="M 550 130 L 586 130"/>
+  <path class="line" d="M 550 154 L 586 154"/>
+  <rect class="box" x="290" y="120" width="110" height="44" rx="4"/>
+  <text x="345.0" y="140.0" text-anchor="middle">AI Off | On</text>
+  <text class="small" x="345.0" y="155.0" text-anchor="middle">switch</text>
+  <path class="dash" d="M 345 120 L 345 90"/>
+  <path class="dash" d="M 345 164 L 345 194"/>
+  <text class="small" x="352" y="109">1 or 0</text>
+  <text class="small" x="352" y="184">0 or 1</text>
+  <text class="small" x="320" y="286" text-anchor="middle">Only one gain is 1 at a time, so one version plays from both speakers.</text>
+</svg>

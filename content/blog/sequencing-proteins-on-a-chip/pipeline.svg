@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-labelledby="t">
+  <title id="t">The software turns a noisy signal into flashes, then groups the flashes into segments, then names each segment</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="400" fill="#fff"/>
+  <text x="20" y="80" text-anchor="start">1. the signal</text>
+  <text class="small" x="20" y="96" text-anchor="start">noisy, drifting</text>
+  <path d="M 150 104.4 L 152 95.5 L 154 101.1 L 156 101.9 L 158 98.1 L 160 100.5 L 162 93.7 L 164 93.7 L 166 95.7 L 168 102.3 L 170 98.7 L 172 97.1 L 174 100.9 L 176 99.0 L 178 96.8 L 180 103.7 L 182 102.4 L 184 96.0 L 186 100.6 L 188 99.9 L 190 104.7 L 192 102.7 L 194 96.5 L 196 106.1 L 198 94.0 L 200 98.2 L 202 102.9 L 204 94.4 L 206 99.1 L 208 92.8 L 210 101.6 L 212 102.9 L 214 100.2 L 216 104.4 L 218 96.5 L 220 101.8 L 222 68.4 L 224 68.2 L 226 98.4 L 228 103.8 L 230 105.2 L 232 98.6 L 234 69.2 L 236 60.8 L 238 101.7 L 240 100.9 L 242 105.7 L 244 71.3 L 246 63.8 L 248 97.2 L 250 101.1 L 252 92.0 L 254 66.1 L 256 62.0 L 258 93.3 L 260 92.4 L 262 102.3 L 264 93.4 L 266 63.0 L 268 65.0 L 270 103.7 L 272 92.6 L 274 97.7 L 276 99.1 L 278 71.7 L 280 70.8 L 282 103.4 L 284 95.2 L 286 97.1 L 288 64.3 L 290 71.6 L 292 104.6 L 294 93.3 L 296 93.6 L 298 94.4 L 300 94.4 L 302 97.9 L 304 99.3 L 306 62.7 L 308 59.0 L 310 64.8 L 312 64.1 L 314 66.8 L 316 72.2 L 318 68.5 L 320 66.1 L 322 99.5 L 324 100.3 L 326 91.5 L 328 103.3 L 330 101.6 L 332 102.9 L 334 69.8 L 336 64.1 L 338 64.2 L 340 60.0 L 342 67.4 L 344 59.4 L 346 59.5 L 348 61.4 L 350 92.7 L 352 95.2 L 354 91.1 L 356 90.4 L 358 92.5 L 360 91.8 L 362 95.4 L 364 90.6 L 366 70.5 L 368 66.8 L 370 60.3 L 372 61.7 L 374 63.0 L 376 63.2 L 378 59.8 L 380 70.0 L 382 72.0 L 384 64.5 L 386 96.8 L 388 91.2 L 390 91.4 L 392 94.7 L 394 93.6 L 396 101.5 L 398 92.1 L 400 90.1 L 402 103.1 L 404 97.2 L 406 91.8 L 408 97.3 L 410 90.1 L 412 97.1 L 414 103.3 L 416 101.7 L 418 99.3 L 420 93.2 L 422 94.7 L 424 91.9 L 426 68.3 L 428 64.9 L 430 100.3 L 432 94.0 L 434 92.5 L 436 100.7 L 438 71.1 L 440 69.3 L 442 100.6 L 444 100.7 L 446 99.6 L 448 92.4 L 450 96.4 L 452 94.1 L 454 57.5 L 456 57.5 L 458 61.0 L 460 92.7 L 462 98.7 L 464 102.4 L 466 95.2 L 468 70.1 L 470 70.8 L 472 102.3 L 474 94.0 L 476 91.9 L 478 92.0 L 480 59.6 L 482 59.6 L 484 97.5 L 486 101.3 L 488 100.5 L 490 95.4 L 492 97.8 L 494 67.8 L 496 57.8 L 498 65.8 L 500 101.3 L 502 99.5 L 504 99.0 L 506 95.2 L 508 90.9 L 510 99.5 L 512 61.1 L 514 67.6 L 516 70.0 L 518 61.9 L 520 61.9 L 522 69.5 L 524 66.4 L 526 58.6 L 528 58.0 L 530 58.3 L 532 68.8 L 534 67.4 L 536 58.1 L 538 67.6 L 540 69.8 L 542 65.2 L 544 60.9 L 546 63.6 L 548 57.8 L 550 56.1 L 552 69.5 L 554 97.0 L 556 95.2 L 558 100.9 L 560 93.9 L 562 100.0 L 564 99.3 L 566 58.7 L 568 59.2 L 570 59.8 L 572 59.0 L 574 63.8 L 576 59.2 L 578 61.4 L 580 57.4 L 582 68.2 L 584 60.4 L 586 61.9 L 588 63.6 L 590 68.1 L 592 61.3 L 594 68.2 L 596 62.4 L 598 62.8 L 600 94.6 L 602 87.5 L 604 93.4 L 606 89.8 L 608 87.2 L 610 98.3 L 612 89.5 L 614 93.7 L 616 97.2 L 618 94.8 L 620 91.6" fill="none" stroke="#222" stroke-width="1"/>
+  <text x="20" y="176" text-anchor="start">2. find the</text>
+  <text x="20" y="192" text-anchor="start">flashes</text>
+  <path class="plain" d="M 150 200 L 622 200"/>
+  <rect class="barb" x="221" y="160" width="4" height="40"/>
+  <rect class="barb" x="233" y="160" width="4" height="40"/>
+  <rect class="barb" x="244" y="160" width="3" height="40"/>
+  <rect class="barb" x="254" y="160" width="4" height="40"/>
+  <rect class="barb" x="265" y="160" width="5" height="40"/>
+  <rect class="barb" x="278" y="160" width="3" height="40"/>
+  <rect class="barb" x="288" y="160" width="4" height="40"/>
+  <rect class="barb" x="306" y="160" width="16" height="40"/>
+  <rect class="barb" x="334" y="160" width="16" height="40"/>
+  <rect class="barb" x="365" y="160" width="21" height="40"/>
+  <rect class="barb" x="426" y="160" width="3" height="40"/>
+  <rect class="barb" x="438" y="160" width="3" height="40"/>
+  <rect class="barb" x="453" y="160" width="6" height="40"/>
+  <rect class="barb" x="467" y="160" width="4" height="40"/>
+  <rect class="barb" x="479" y="160" width="4" height="40"/>
+  <rect class="barb" x="493" y="160" width="6" height="40"/>
+  <rect class="barb" x="511" y="160" width="42" height="40"/>
+  <rect class="barb" x="565" y="160" width="34" height="40"/>
+  <text x="20" y="266" text-anchor="start">3. split where</text>
+  <text x="20" y="282" text-anchor="start">the rhythm</text>
+  <text x="20" y="298" text-anchor="start">changes</text>
+  <rect class="box grey" x="150" y="250" width="65" height="40" rx="0"/>
+  <rect class="box orange" x="215" y="250" width="85" height="40" rx="0"/>
+  <rect class="box orange" x="300" y="250" width="120" height="40" rx="0"/>
+  <rect class="box orange" x="420" y="250" width="85" height="40" rx="0"/>
+  <rect class="box orange" x="505" y="250" width="117" height="40" rx="0"/>
+  <path class="dash" d="M 215 50 L 215 250"/>
+  <path class="dash" d="M 300 50 L 300 250"/>
+  <path class="dash" d="M 420 50 L 420 250"/>
+  <path class="dash" d="M 505 50 L 505 250"/>
+  <text x="20" y="346" text-anchor="start">4. name each</text>
+  <text x="20" y="362" text-anchor="start">segment</text>
+  <text class="small" x="182.5" y="275" text-anchor="middle">quiet</text>
+  <text x="257.5" y="275" text-anchor="middle">R</text>
+  <text class="small" x="257.5" y="346" text-anchor="middle">arginine</text>
+  <text class="small" x="257.5" y="360" text-anchor="middle">short</text>
+  <path class="plain" d="M 257.5 292 L 257.5 332"/>
+  <text x="360.0" y="275" text-anchor="middle">L</text>
+  <text class="small" x="360.0" y="346" text-anchor="middle">leucine</text>
+  <text class="small" x="360.0" y="360" text-anchor="middle">long</text>
+  <path class="plain" d="M 360.0 292 L 360.0 332"/>
+  <text x="462.5" y="275" text-anchor="middle">I</text>
+  <text class="small" x="462.5" y="346" text-anchor="middle">isoleucine</text>
+  <text class="small" x="462.5" y="360" text-anchor="middle">short</text>
+  <path class="plain" d="M 462.5 292 L 462.5 332"/>
+  <text x="563.5" y="275" text-anchor="middle">F</text>
+  <text class="small" x="563.5" y="346" text-anchor="middle">phenylalanine</text>
+  <text class="small" x="563.5" y="360" text-anchor="middle">longest</text>
+  <path class="plain" d="M 563.5 292 L 563.5 332"/>
+  <text class="small" x="20" y="26" text-anchor="start">one well, reading a piece of the peptide DQQRLIFAG (drawn by hand, not real data)</text>
+  <text class="small" x="20" y="392" text-anchor="start">D and Q have no recognizer, so the read starts with a quiet stretch.</text>
+</svg>

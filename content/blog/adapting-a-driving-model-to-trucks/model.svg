@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-labelledby="t">
+  <title id="t">The vision-language backbone stays frozen, the action expert is fine-tuned, and a small steering module nudges each step</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="230" fill="#fff"/>
+  <rect class="box" x="10" y="40" width="90" height="48" rx="4"/>
+  <text x="55.0" y="68.0" text-anchor="middle">cameras</text>
+  <rect class="box grey" x="140" y="30" width="180" height="68" rx="4"/>
+  <text x="230.0" y="62.0" text-anchor="middle">vision-language</text>
+  <text class="small" x="230.0" y="77.0" text-anchor="middle">backbone, 8.2B, frozen</text>
+  <rect class="box orange" x="360" y="30" width="160" height="68" rx="4"/>
+  <text x="440.0" y="62.0" text-anchor="middle">action expert</text>
+  <text class="small" x="440.0" y="77.0" text-anchor="middle">2.3B, fine-tuned</text>
+  <rect class="box" x="560" y="40" width="70" height="48" rx="4"/>
+  <text x="595.0" y="68.0" text-anchor="middle">path</text>
+  <path class="line" d="M 100 64 L 138 64"/>
+  <path class="line" d="M 320 64 L 358 64"/>
+  <path class="line" d="M 520 64 L 558 64"/>
+  <rect class="box blue" x="360" y="150" width="160" height="52" rx="4"/>
+  <text x="440.0" y="174.0" text-anchor="middle">steering module</text>
+  <text class="small" x="440.0" y="189.0" text-anchor="middle">small, added on top</text>
+  <path class="dasharrow" d="M 440 150 L 440 100"/>
+  <text class="small" x="448" y="130" text-anchor="start">nudges each step</text>
+  <text class="small" x="20" y="170" text-anchor="start">adapt: retrain only the orange part</text>
+  <text class="small" x="20" y="188" text-anchor="start">steer: then freeze it and add the blue part</text>
+</svg>

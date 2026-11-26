@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t">
+  <title id="t">Median flash length for the seven recognizable amino acids, grouped by the three recognizers</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="330" fill="#fff"/>
+  <text class="small" x="20" y="26" text-anchor="start">typical length of one flash, in seconds</text>
+  <text x="230" y="62" text-anchor="end">phenylalanine</text>
+  <rect class="barb" x="242" y="44" width="324" height="26" rx="0"/>
+  <text x="574" y="62" text-anchor="start">2.49</text>
+  <text x="230" y="96" text-anchor="end">tyrosine</text>
+  <rect class="barb" x="242" y="78" width="95" height="26" rx="0"/>
+  <text x="345" y="96" text-anchor="start">0.73</text>
+  <text x="230" y="130" text-anchor="end">tryptophan</text>
+  <rect class="barb" x="242" y="112" width="40" height="26" rx="0"/>
+  <text x="290" y="130" text-anchor="start">0.31</text>
+  <path class="plain" d="M 108 44 L 108 138"/>
+  <text x="98" y="88.0" text-anchor="end">PS610</text>
+  <text class="small" x="98" y="102.0" text-anchor="end">recognizer</text>
+  <text x="230" y="178" text-anchor="end">leucine</text>
+  <rect class="baro" x="242" y="160" width="157" height="26" rx="0"/>
+  <text x="407" y="178" text-anchor="start">1.21</text>
+  <text x="230" y="212" text-anchor="end">isoleucine</text>
+  <rect class="baro" x="242" y="194" width="36" height="26" rx="0"/>
+  <text x="286" y="212" text-anchor="start">0.28</text>
+  <text x="230" y="246" text-anchor="end">valine</text>
+  <rect class="baro" x="242" y="228" width="27" height="26" rx="0"/>
+  <text x="277" y="246" text-anchor="start">0.21</text>
+  <path class="plain" d="M 108 160 L 108 254"/>
+  <text x="98" y="204.0" text-anchor="end">PS961</text>
+  <text class="small" x="98" y="218.0" text-anchor="end">recognizer</text>
+  <text x="230" y="294" text-anchor="end">arginine</text>
+  <rect x="242" y="276" width="30" height="26" fill="#d9d9d9" stroke="#222" stroke-width="1.2"/>
+  <text x="280" y="294" text-anchor="start">0.23</text>
+  <path class="plain" d="M 108 276 L 108 302"/>
+  <text x="98" y="286.0" text-anchor="end">PS691</text>
+  <text class="small" x="98" y="300.0" text-anchor="end">recognizer</text>
+  <text class="small" x="20" y="320" text-anchor="start">Three recognizers cover seven amino acids, each with its own rhythm.</text>
+</svg>
