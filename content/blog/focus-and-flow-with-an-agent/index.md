@@ -11,6 +11,8 @@ That post assumed that the programmer was the one doing the programming. These d
 
 The first one is the wait. An agent takes long enough that watching it is boring, and not long enough to get anything substantial done in the meantime. The natural thing to do with a three-minute gap is to check Slack or e-mail, and by the time the agent is done, my attention is somewhere else entirely. It's the same problem I described with the break between Pomodoros, where my motivation has "reset" along with the break -- except that it now happens many times an hour.
 
+![One hour with an agent, spent switching away in every gap or staying on the same task](timeline.svg)
+
 ## The notification problem
 
 The second one is that the agent is, itself, a notification. In the original post, I mentioned Cal Newport's point from "Deep Work" about why e-mail is addictive: you don't know what might be sitting in your inbox, and checking it gives the brain a tiny dopamine hit. An agent that's working in the background has exactly the same shape. It might be done, it might have a question, or it might have produced something great, and there's only one way to find out. If the agent also dings or bounces an icon when it wants approval, then I've turned my notifications back on without really deciding to.
