@@ -19,7 +19,13 @@ The second one is that the agent is, itself, a notification. In the original pos
 
 ## The parallel problem
 
-The third one is running several agents at once. It's very tempting, since each of them is mostly waiting on me anyway, and having four tasks in progress feels like four times the output. In practice, it's the definition of shallow work. Every time I switch from one agent to another, I have to reload what that task was about, and I end up skimming each result instead of reading it. Flow state, at least, had the advantage that it was deep. This has the constant switching of a busy Slack day, with the added risk that the code gets merged.
+The third one is running several agents at once. It's very tempting, since each of them is mostly waiting on me anyway, and having four tasks in progress feels like four times the output. In practice, it's the definition of shallow work. Every time I switch from one agent to another, I have to reload what that task was about, and I end up skimming each result instead of reading it.
+
+![Half an hour with one agent versus four: every switch costs time spent remembering what that task was about](parallel.svg)
+
+There's a name for the cost of that switch. Sophie Leroy, a researcher whose work Newport also leans on in "Deep Work", calls it _attention residue_: when we move from one task to another, part of our attention stays behind on the first one, and we do worse on the second as a result. With four agents, every switch leaves some residue behind, and there's never enough time between switches for it to clear.
+
+Flow state, at least, had the advantage that it was deep. This has the constant switching of a busy Slack day, with the added risk that the code gets merged.
 
 The original post also pointed out that engineers sometimes "flow" for a full day or more on a concept that was poorly thought out from the beginning. Agents do this too, and they do it a lot faster. An agent with a bad plan will produce a great deal of work in an hour, and all of it has to be read before it can be thrown away.
 

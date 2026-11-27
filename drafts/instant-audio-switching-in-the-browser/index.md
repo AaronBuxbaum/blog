@@ -17,6 +17,8 @@ There are a few obvious ways to build this, and each has a problem.
 2. Play two files at the same time and mute one. Two separate media elements don't stay perfectly aligned, especially on a slow connection, and the user is still downloading the video twice.
 3. Use the alternate audio tracks that streaming formats like HLS support. This is what they're for, but switching between audio renditions involves re-buffering, which can take several seconds. That's fine for changing the language of a movie, and it's no good for an A/B comparison.
 
+![What the listener hears at the moment of the switch for each approach: a hitch, drift, a long re-buffer, or a clean cut](approaches.svg)
+
 ## The trick
 
 The approach I ended up with relies on the fact that a stereo audio track is really two independent tracks that happen to be played in different ears. The hearing aid comparison doesn't need stereo, so we can use those two slots for something else: the "off" audio goes in the left channel, and the "on" audio goes in the right channel.
@@ -75,6 +77,20 @@ Build one audio graph and share it. A media element can only be attached to a We
 Browsers won't start an audio context until the user has interacted with the page, so the graph has to be set up (or resumed) on the first click.
 
 A sudden jump in volume can occasionally produce a faint click, depending on the audio. If that happens, ramping the two volumes in opposite directions over a few milliseconds fixes it, and it's still far too fast to notice.
+
+Web Audio has this built in, so the change to the sketch above is small:
+
+```
+const setEnhanced = (enabled) => {
+  const now = context.currentTime;
+  on.gain.setTargetAtTime(enabled ? 1 : 0, now, 0.003);
+  off.gain.setTargetAtTime(enabled ? 0 : 1, now, 0.003);
+};
+```
+
+The last argument is a time constant, in seconds. Each volume gets most of the way to its new value within about 10 milliseconds, which is enough to smooth out the click and much too short to hear as a gap.
+
+![Ramping the two volumes in opposite directions over a few milliseconds](ramp.svg)
 
 ## The tradeoffs
 

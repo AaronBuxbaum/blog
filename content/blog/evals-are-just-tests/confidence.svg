@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t">
+  <title id="t">The chance that a case passes ten runs out of ten, by its true pass rate. A case that fails one time in twenty still passes all ten about 60% of the time</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .barg { fill: #d9d9d9; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .thin { fill: none; stroke: #bbb; stroke-width: 1; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrowg); }
+      .curveb { fill: none; stroke: #4a78b8; stroke-width: 2.5; }
+      .curveo { fill: none; stroke: #d98a2b; stroke-width: 2.5; }
+      .dotb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .doto { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="300" fill="#fff"/>
+  <path class="thin" d="M 90 240.0 L 600 240.0"/>
+  <text class="small" x="82.0" y="244.0" text-anchor="end">0%</text>
+  <path class="thin" d="M 90 190.0 L 600 190.0"/>
+  <text class="small" x="82.0" y="194.0" text-anchor="end">25%</text>
+  <path class="thin" d="M 90 140.0 L 600 140.0"/>
+  <text class="small" x="82.0" y="144.0" text-anchor="end">50%</text>
+  <path class="thin" d="M 90 90.0 L 600 90.0"/>
+  <text class="small" x="82.0" y="94.0" text-anchor="end">75%</text>
+  <path class="thin" d="M 90 40.0 L 600 40.0"/>
+  <text class="small" x="82.0" y="44.0" text-anchor="end">100%</text>
+  <path class="plain" d="M 90.0 240 L 90.0 245"/>
+  <text class="small" x="90.0" y="259.0" text-anchor="middle">80%</text>
+  <path class="plain" d="M 217.5 240 L 217.5 245"/>
+  <text class="small" x="217.5" y="259.0" text-anchor="middle">85%</text>
+  <path class="plain" d="M 345.0 240 L 345.0 245"/>
+  <text class="small" x="345.0" y="259.0" text-anchor="middle">90%</text>
+  <path class="plain" d="M 472.5 240 L 472.5 245"/>
+  <text class="small" x="472.5" y="259.0" text-anchor="middle">95%</text>
+  <path class="plain" d="M 600.0 240 L 600.0 245"/>
+  <text class="small" x="600.0" y="259.0" text-anchor="middle">100%</text>
+  <path class="plain" d="M 90 240 L 600 240"/>
+  <path class="plain" d="M 90 40 L 90 240"/>
+  <path class="curveb" d="M 90.0 218.5 L 95.1 218.0 L 100.2 217.4 L 105.3 216.9 L 110.4 216.3 L 115.5 215.7 L 120.6 215.1 L 125.7 214.5 L 130.8 213.8 L 135.9 213.2 L 141.0 212.5 L 146.1 211.8 L 151.2 211.1 L 156.3 210.4 L 161.4 209.7 L 166.5 209.0 L 171.6 208.2 L 176.7 207.4 L 181.8 206.7 L 186.9 205.8 L 192.0 205.0 L 197.1 204.2 L 202.2 203.3 L 207.3 202.4 L 212.4 201.5 L 217.5 200.6 L 222.6 199.7 L 227.7 198.7 L 232.8 197.8 L 237.9 196.8 L 243.0 195.7 L 248.1 194.7 L 253.2 193.6 L 258.3 192.6 L 263.4 191.4 L 268.5 190.3 L 273.6 189.2 L 278.7 188.0 L 283.8 186.8 L 288.9 185.6 L 294.0 184.3 L 299.1 183.0 L 304.2 181.7 L 309.3 180.4 L 314.4 179.0 L 319.5 177.6 L 324.6 176.2 L 329.7 174.8 L 334.8 173.3 L 339.9 171.8 L 345.0 170.3 L 350.1 168.7 L 355.2 167.1 L 360.3 165.5 L 365.4 163.8 L 370.5 162.1 L 375.6 160.4 L 380.7 158.6 L 385.8 156.8 L 390.9 155.0 L 396.0 153.1 L 401.1 151.2 L 406.2 149.3 L 411.3 147.3 L 416.4 145.3 L 421.5 143.2 L 426.6 141.1 L 431.7 139.0 L 436.8 136.8 L 441.9 134.5 L 447.0 132.3 L 452.1 130.0 L 457.2 127.6 L 462.3 125.2 L 467.4 122.7 L 472.5 120.3 L 477.6 117.7 L 482.7 115.1 L 487.8 112.5 L 492.9 109.8 L 498.0 107.0 L 503.1 104.2 L 508.2 101.4 L 513.3 98.5 L 518.4 95.5 L 523.5 92.5 L 528.6 89.4 L 533.7 86.3 L 538.8 83.1 L 543.9 79.9 L 549.0 76.6 L 554.1 73.2 L 559.2 69.8 L 564.3 66.3 L 569.4 62.7 L 574.5 59.1 L 579.6 55.4 L 584.7 51.7 L 589.8 47.9 L 594.9 44.0 L 600.0 40.0"/>
+  <path class="dash" d="M 472.5 240 L 472.5 120.3 L 90 120.3"/>
+  <circle class="doto" cx="472.5" cy="120.3" r="5"/>
+  <text class="small" x="462.5" y="92.3" text-anchor="end">fails 1 run in 20, and still</text>
+  <text class="small" x="462.5" y="106.3" text-anchor="end">passes 10/10 about 60% of the time</text>
+  <text x="345.0" y="285.0" text-anchor="middle">how often the case really passes</text>
+  <text class="small" x="20.0" y="26.0" text-anchor="start">chance of a clean 10/10</text>
+</svg>

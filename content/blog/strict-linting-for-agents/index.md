@@ -38,6 +38,10 @@ linterOptions: {
 
 That's too blunt for some codebases, but it's worth trying first. I also treat any change to a lint or type config as something a person has to read in review, the same way I'd treat a change to a test's assertions. And I tell the agent, in plain words, that if it can't satisfy a rule, it should stop and say so instead of working around it. That last one is only an instruction, so it's the weakest of the three, but it helps.
 
+With all three in place, the loop looks like this. The agent can go around it as many times as it needs to, and the only ways out are a clean run or a person.
+
+![The agent edits until lint and types pass; inline disable comments are ignored, and a change to the lint config goes to a person](loop.svg)
+
 The other downside from the original post still holds as well: lint is inherently coarse. It can tell us that a function is long, but it will never be able to say "this function has multiple concerns". An agent can pass every rule and still solve the wrong problem. Lint takes the easy comments off the reviewer's plate, so the reviewer has more attention left for the hard ones, but it doesn't replace the reviewer.
 
 ## What about the build and strict split?
@@ -47,6 +51,17 @@ The reason for two lint files was that there's almost always a gap between the s
 That part has changed quite a bit. Bringing old code up to a rule is tedious, mechanical work with a clear definition of done, which is about the best kind of work to hand to an agent. I pick one rule and one directory, ask the agent to bring it into compliance without changing behavior, and review the result as a small PR. Assuming the tests are good, this goes quickly, and a rule can move from the strict lint to the build lint in days instead of quarters.
 
 Custom rules have also become cheap. Writing an ESLint rule used to mean an afternoon of reading about syntax trees, so I only did it for the patterns that really hurt. Now, if I leave the same review comment twice, I ask the agent to write a rule for it (with tests), and that comment never has to be written again.
+
+A lot of the time, it doesn't even need to be a custom rule. ESLint's `no-restricted-syntax` takes a selector for the pattern and a message for the fix, and that's often all a repeated review comment really is:
+
+```
+'no-restricted-syntax': ['error', {
+  selector: "CallExpression[callee.name='fetch']",
+  message: 'Use apiClient instead of calling fetch directly.',
+}],
+```
+
+The message matters more than it used to, since the agent is the one reading it. A message that says what to do instead usually gets fixed on the first try, and a message that only says what's wrong tends to get a workaround.
 
 ## My recommendation
 

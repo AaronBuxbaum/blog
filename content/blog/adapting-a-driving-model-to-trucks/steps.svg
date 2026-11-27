@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-labelledby="t">
+  <title id="t">The action expert starts from noise and refines the path a little at each step; the steering module adds a small correction to every step</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .barg { fill: #d9d9d9; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .thin { fill: none; stroke: #bbb; stroke-width: 1; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrowg); }
+      .curveb { fill: none; stroke: #4a78b8; stroke-width: 2.5; }
+      .curveo { fill: none; stroke: #d98a2b; stroke-width: 2.5; }
+      .dotb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .doto { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="230" fill="#fff"/>
+  <rect class="box" x="10" y="40" width="108" height="120" rx="4"/>
+  <path class="plain" d="M 17.6 164.3 L 33.4 170.0 L 38.2 144.4 L 33.8 129.7 L 40.9 131.3 L 49.3 153.3 L 65.9 86.8 L 66.0 127.4 L 86.3 59.3 L 92.7 93.2 L 110.4 109.5 L 115.0 76.5"/>
+  <text class="small" x="64.0" y="178.0" text-anchor="middle">noise</text>
+  <path class="line" d="M 120.0 100.0 L 136.0 100.0"/>
+  <path class="dasharrow" d="M 128.0 196 L 128.0 104"/>
+  <rect class="box" x="138" y="40" width="108" height="120" rx="4"/>
+  <path class="plain" d="M 146.7 157.2 L 160.5 161.3 L 166.0 141.6 L 164.6 129.9 L 171.8 129.9 L 180.1 145.1 L 194.4 93.4 L 196.3 121.8 L 213.5 68.3 L 220.2 91.1 L 235.4 100.3 L 240.8 72.3"/>
+  <text class="small" x="192.0" y="178.0" text-anchor="middle">step 1</text>
+  <path class="line" d="M 248.0 100.0 L 264.0 100.0"/>
+  <path class="dasharrow" d="M 256.0 196 L 256.0 104"/>
+  <rect class="box" x="266" y="40" width="108" height="120" rx="4"/>
+  <path class="plain" d="M 275.8 150.1 L 287.5 152.7 L 293.7 138.9 L 295.3 130.0 L 302.7 128.6 L 310.8 136.8 L 322.9 100.0 L 326.7 116.2 L 340.7 77.4 L 347.7 89.0 L 360.4 91.1 L 366.5 68.0"/>
+  <text class="small" x="320.0" y="178.0" text-anchor="middle">step 2</text>
+  <path class="line" d="M 376.0 100.0 L 392.0 100.0"/>
+  <path class="dasharrow" d="M 384.0 196 L 384.0 104"/>
+  <rect class="box" x="394" y="40" width="108" height="120" rx="4"/>
+  <path class="plain" d="M 404.9 143.1 L 414.6 144.0 L 421.5 136.2 L 426.1 130.2 L 433.6 127.2 L 441.5 128.5 L 451.3 106.6 L 457.1 110.6 L 467.9 86.5 L 475.2 86.9 L 485.4 82.0 L 492.3 63.8"/>
+  <text class="small" x="448.0" y="178.0" text-anchor="middle">step 3</text>
+  <path class="line" d="M 504.0 100.0 L 520.0 100.0"/>
+  <path class="dasharrow" d="M 512.0 196 L 512.0 104"/>
+  <rect class="box blue" x="522" y="40" width="108" height="120" rx="4"/>
+  <path class="curveb" d="M 534.0 136.0 L 541.6 135.4 L 549.3 133.5 L 556.9 130.3 L 564.5 125.9 L 572.2 120.2 L 579.8 113.2 L 587.5 105.0 L 595.1 95.5 L 602.7 84.8 L 610.4 72.8 L 618.0 59.5"/>
+  <text class="small" x="576.0" y="178.0" text-anchor="middle">the path</text>
+  <rect class="baro" x="10.0" y="206.0" width="14.0" height="14.0"/>
+  <text class="small" x="30.0" y="218.0" text-anchor="start">steering: a small nudge added to every step (dashed)</text>
+  <text class="small" x="10.0" y="26.0" text-anchor="start">the action expert refines a path in small steps</text>
+</svg>

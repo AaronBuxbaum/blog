@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-labelledby="t">
+  <title id="t">METR 2025: developers forecast a 24% speedup and believed afterwards that they were 20% faster, but they were measured 19% slower</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .barg { fill: #d9d9d9; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .thin { fill: none; stroke: #bbb; stroke-width: 1; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrowg); }
+      .curveb { fill: none; stroke: #4a78b8; stroke-width: 2.5; }
+      .curveo { fill: none; stroke: #d98a2b; stroke-width: 2.5; }
+      .dotb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .doto { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="230" fill="#fff"/>
+  <text class="small" x="20.0" y="26.0" text-anchor="start">change in time to finish an issue, with AI tools (METR, 2025)</text>
+  <text x="240.0" y="69.0" text-anchor="end">forecast beforehand</text>
+  <rect class="barb" x="305.6" y="50.0" width="134.4" height="28.0"/>
+  <text x="299.6" y="69.0" text-anchor="end">-24%</text>
+  <text x="240.0" y="113.0" text-anchor="end">estimate afterwards</text>
+  <rect class="barb" x="328.0" y="94.0" width="112.0" height="28.0"/>
+  <text x="322.0" y="113.0" text-anchor="end">-20%</text>
+  <text x="240.0" y="157.0" text-anchor="end">measured</text>
+  <rect class="baro" x="440.0" y="138.0" width="106.4" height="28.0"/>
+  <text x="552.4" y="157.0" text-anchor="start">+19%</text>
+  <path class="plain" d="M 440 40 L 440 190"/>
+  <path class="plain" d="M 260 190 L 620 190"/>
+  <path class="plain" d="M 272.0 186 L 272.0 194"/>
+  <text class="small" x="272.0" y="207.0" text-anchor="middle">-30%</text>
+  <path class="plain" d="M 328.0 186 L 328.0 194"/>
+  <text class="small" x="328.0" y="207.0" text-anchor="middle">-20%</text>
+  <path class="plain" d="M 384.0 186 L 384.0 194"/>
+  <text class="small" x="384.0" y="207.0" text-anchor="middle">-10%</text>
+  <path class="plain" d="M 440.0 186 L 440.0 194"/>
+  <text class="small" x="440.0" y="207.0" text-anchor="middle">0</text>
+  <path class="plain" d="M 496.0 186 L 496.0 194"/>
+  <text class="small" x="496.0" y="207.0" text-anchor="middle">+10%</text>
+  <path class="plain" d="M 552.0 186 L 552.0 194"/>
+  <text class="small" x="552.0" y="207.0" text-anchor="middle">+20%</text>
+  <path class="plain" d="M 608.0 186 L 608.0 194"/>
+  <text class="small" x="608.0" y="207.0" text-anchor="middle">+30%</text>
+  <text class="small" x="270.0" y="224.0" text-anchor="start">&lt;- faster</text>
+  <text class="small" x="610.0" y="224.0" text-anchor="end">slower -&gt;</text>
+</svg>

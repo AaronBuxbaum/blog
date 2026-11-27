@@ -17,6 +17,10 @@ The second is substitution: when we're faced with a difficult question, we tend 
 
 There's some evidence that this affects us more than we'd like to admit. In 2025, METR ran a [study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) where experienced open-source developers worked on issues in their own repositories, with and without AI tools. With the tools, they took 19% longer. What's more interesting is that, afterwards, the same developers believed that the tools had made them about 20% faster. It was a small study, and the tools have improved a lot since then, so I wouldn't read too much into the first number. The gap between the two numbers is what matters. How fast a tool _feels_ and how fast it _is_ are different questions, and we're not very good at telling them apart.
 
+![METR, 2025: developers forecast a 24% speedup and believed afterwards that they were 20% faster, but they were measured 19% slower](metr.svg)
+
+The forecast is worth a look, too. Before starting, the developers expected the tools to make them about 24% faster. After actually using them, and in fact being slower, their estimate had barely moved. In other words, the experience didn't change the story, which fits the two fallacies above pretty well. If we want to know whether a tool is helping, we have to measure it, because asking the people using it (ourselves included) doesn't work very well.
+
 ## So what are the tradeoffs?
 
 Here are the ones that I run into the most.
