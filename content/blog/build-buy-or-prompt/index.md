@@ -37,6 +37,10 @@ If the model is wrong 0.5% of the time, the mistakes cost $12,500, and the tool 
 
 The difference between a tool that's barely worth having and a tool that's a great investment is a point and a half of error rate. The price of the model hardly matters by comparison. This is why I keep going on about [evals](/evals-are-just-tests/): without them, the most important number in the calculation is a guess.
 
+It helps to see the whole range. In this example, every point of error rate costs $25,000 a year (250 mistakes at an hour each). Prompting comes out ahead of both buying and building, at least in the first year, as long as the model is wrong less than about 1% of the time. Above about 2.3%, it loses money outright.
+
+![First-year savings by error rate: prompting beats building and buying below about 1%, and loses money above about 2.3%](breakeven.svg)
+
 To be fair, people make mistakes too, and the by-hand number above should really include them. It's worth measuring how often that happens before deciding that 2% is unacceptable. Most teams don't know their own error rate, either.
 
 ## How I'd decide
@@ -46,5 +50,9 @@ Given all of that, here's how I'd approach it.
 If someone sells a tool for the problem, and the problem isn't special to your business, buy it. If the rules can be written down, build it with plain code, since it's free to run and it doesn't make mistakes that it didn't make yesterday. If the task needs judgment and a mistake is cheap to fix, a model is a very good fit. If the task needs judgment and a mistake is expensive, a model can still work, but the plan needs to include a person checking the output, and their time goes into the math.
 
 In practice, the best answer is often a mix. Plain code handles the cases with clear rules, a model handles the fuzzy ones, and a person looks at the ones that the model isn't sure about.
+
+![Plain code takes the requests with clear rules, a model takes the fuzzy ones, and a person checks the ones the model isn't sure about](mix.svg)
+
+The person at the end changes the math, too. If the model is unsure about one request in ten, that person is checking 2,500 requests a year instead of doing 25,000, and the mistakes they catch come straight off the most expensive line in the calculation.
 
 The saying goes that there's no free lunch, and a model is no exception -- the cost has moved from the building to the being wrong. I'd recommend that anyone pitching an AI tool to their team bring this math along, with an honest number on the mistakes line. If it still comes out ahead, it's an easy decision.

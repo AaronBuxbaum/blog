@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="640" height="240" role="img" aria-labelledby="t">
+  <title id="t">Over four weeks, one engineer ships a single thoroughly tested feature at the end; another ships five small versions and hears back from users after each</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .barg { fill: #d9d9d9; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .thin { fill: none; stroke: #bbb; stroke-width: 1; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrowg); }
+      .curveb { fill: none; stroke: #4a78b8; stroke-width: 2.5; }
+      .curveo { fill: none; stroke: #d98a2b; stroke-width: 2.5; }
+      .dotb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .doto { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="240" fill="#fff"/>
+  <text x="150.0" y="72.0" text-anchor="end">one big feature</text>
+  <rect class="barb" x="160.0" y="52.0" width="429.0" height="30.0"/>
+  <text class="small" x="374.5" y="72.0" text-anchor="middle">build and test every corner</text>
+  <circle class="doto" cx="600.0" cy="67.0" r="7"/>
+  <text x="150.0" y="132.0" text-anchor="end">five small ones</text>
+  <rect class="barb" x="160.0" y="112.0" width="72.6" height="30.0"/>
+  <circle class="doto" cx="240.3" cy="127.0" r="7"/>
+  <rect class="barb" x="248.0" y="112.0" width="72.6" height="30.0"/>
+  <circle class="doto" cx="328.3" cy="127.0" r="7"/>
+  <rect class="barb" x="336.0" y="112.0" width="72.6" height="30.0"/>
+  <circle class="doto" cx="416.3" cy="127.0" r="7"/>
+  <rect class="barb" x="424.0" y="112.0" width="72.6" height="30.0"/>
+  <circle class="doto" cx="504.3" cy="127.0" r="7"/>
+  <rect class="barb" x="512.0" y="112.0" width="72.6" height="30.0"/>
+  <circle class="doto" cx="592.3" cy="127.0" r="7"/>
+  <path class="plain" d="M 160 170 L 620 170"/>
+  <path class="plain" d="M 160.0 166 L 160.0 174"/>
+  <text class="small" x="160.0" y="188.0" text-anchor="middle">week 0</text>
+  <path class="plain" d="M 270.0 166 L 270.0 174"/>
+  <text class="small" x="270.0" y="188.0" text-anchor="middle">week 1</text>
+  <path class="plain" d="M 380.0 166 L 380.0 174"/>
+  <text class="small" x="380.0" y="188.0" text-anchor="middle">week 2</text>
+  <path class="plain" d="M 490.0 166 L 490.0 174"/>
+  <text class="small" x="490.0" y="188.0" text-anchor="middle">week 3</text>
+  <path class="plain" d="M 600.0 166 L 600.0 174"/>
+  <text class="small" x="600.0" y="188.0" text-anchor="middle">week 4</text>
+  <rect class="barb" x="160.0" y="212.0" width="14.0" height="14.0"/>
+  <text class="small" x="180.0" y="224.0" text-anchor="start">building</text>
+  <circle class="doto" cx="307.0" cy="219.0" r="7"/>
+  <text class="small" x="320.0" y="223.0" text-anchor="start">a user sees it, and you learn something</text>
+</svg>

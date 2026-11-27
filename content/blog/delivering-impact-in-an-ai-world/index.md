@@ -21,6 +21,10 @@ Now, the first version of a feature takes an afternoon, and so does the second v
 
 So, when a mentee asks about impact, I tell them to optimize for how quickly they can get something real in front of a user, see what happens, and go again. An engineer who ships five small things and learns from each of them is very likely to end up further along than one who ships a single, perfectly covered thing that turns out to be the wrong feature.
 
+![Over four weeks, one engineer ships a single, thoroughly tested feature at the end, and another ships five small versions and hears back from users after each one](loops.svg)
+
+The difference between those two isn't really the amount of code. They wrote about the same amount. The difference is how many times each of them found out whether they were right. The first engineer gets one answer, at the end of the month, and if it's the wrong feature, the whole month goes with it. The second gets five answers, and each one steers the next.
+
 ## What velocity doesn't mean
 
 Like everything, this has tradeoffs, and I try to be clear with mentees about where it stops.

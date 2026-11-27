@@ -102,6 +102,10 @@ Because we've done such a good job of holding other variables constant, we only 
 - Taste: if the coffee is too sour, your grind is too course; if the coffee is too bitter, your grind is too fine.
 - Flavors: this is entirely dependent on the bean. If your bean is bad, all a great pourover is going to do is make it taste _really_ bad and showcase all of the bad-tasting characteristics.
 
+In other words, each problem has one knob, and we only turn one knob per cup:
+
+![Dialing in: sour means grind finer, bitter means grind coarser, weak means more coffee, and strong means less coffee](dial-in.svg)
+
 We also use the _drawdown time_ as a way to tell us if we're doing a good job of holding our variables constant. If everything stays consistent, the amount of time that it takes until all of the water gets through the beans and it is ready to drink should also be consistent. If it goes too long, this might indicate that our grind is too fine, and vice versa for if it goes too short. However, it's best to use your taste buds as the metric!
 
 Note that there is a difference between sour and bitter. Sour is like citrus and fruit; it makes your mouth pucker, and you feel it on the sides of your mouth. Bitter is pungent and is more like dark chocolate or a hoppy beer, felt in the back of the tongue. It's common to confuse sour and bitter, but they are very different!
@@ -149,6 +153,10 @@ Steps:
 7. At 1:15, pour very slowly right down the middle until the scale reads 500g. You should end at 1:45. The goal is to agitate the grounds as _little_ as possible, and to keep the cone topped off.
 8. As soon as is safe, swirl the cone.
 9. Let it draw all the way down. Finish time is 3:00.
+
+Here's the same recipe from the point of view of the scale. If you hit these marks at about these times every cup, the pour is consistent, and the grind is the only thing left to play with.
+
+![The V60 recipe as the scale sees it: bloom, a fast circular pour to 300g, a slow pour down the middle to 500g, and drawdown](pour.svg)
 
 To make iced coffee:
 

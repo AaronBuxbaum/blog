@@ -29,6 +29,10 @@ My third proposal was that actual guidelines should be drawn up, similar to othe
 
 I've spent the last several years working on software for autonomous vehicles, so this isn't an abstract point for me. I still think the proposal is right, and I think there's less time to get to it than there was. The amount of software in the world is growing much faster than it used to, because it has become so cheap to produce. The amount of careful review hasn't grown with it. For most software, that's a perfectly reasonable tradeoff (I recently wrote about [preferring velocity](/delivering-impact-in-an-ai-world/) for exactly that kind of work). For software where a mistake can hurt someone, it isn't, and that's where the line between the craft and the engineering needs to be drawn clearly.
 
+In practice, I find it useful to sort a team's software by one question: what does a mistake cost, and can it be undone? A prototype or an internal tool sits at one end. Billing, medical records, and anything that moves a vehicle sit at the other. Most things are easy to place. The hard part is being honest about the ones in the middle, since everyone would like their project to be on the fast end.
+
+![Software sorted by what a mistake costs, with craft on the cheap end and engineering on the expensive end](spectrum.svg)
+
 ## So, is it still a misnomer?
 
 For most of us, most of the time, I think it is. We're still practicing a craft, with a remarkable new tool. What has changed is that the tool does the building, so what's left for the person is the judgment and the responsibility. Those happen to be the two things that the word "engineer" was supposed to mean in the first place.

@@ -11,7 +11,11 @@ Papers are written for other researchers, so here's our attempt at explaining wh
 
 A _VLA_ is a vision-language-action model. It takes in camera images (and sometimes text), and it puts out actions -- in this case, the path that a vehicle should drive over the next few seconds. Several large ones have been released for driving, and we started from NVIDIA's Alpamayo 1.5.
 
-Models like this learn mostly from passenger cars, and a Class 8 truck is not a big car. The trailer doesn't follow the same path as the cab (this is called off-tracking), so a turn that is fine for a sedan can put a trailer into the next lane. The differences matter the most in the situations that come up the least, such as construction zones and the scene of an accident, where the lanes are narrow and the usual rules of the road are suspended.
+Models like this learn mostly from passenger cars, and a Class 8 truck is not a big car. The trailer doesn't follow the same path as the cab (this is called off-tracking), so a turn that is fine for a sedan can put a trailer into the next lane. The longer the trailer and the tighter the turn, the further it cuts in, which is why a truck driver swings wide before turning.
+
+![Off-tracking: in a turn, the back of the trailer follows a tighter path than the cab and cuts across the inside of the corner](offtracking.svg)
+
+The differences matter the most in the situations that come up the least, such as construction zones and the scene of an accident, where the lanes are narrow and the usual rules of the road are suspended.
 
 The obvious fix is to retrain the model on a huge amount of truck driving. That is expensive, and the rare situations are rare in that data, too. So, the question in the paper is a narrower one: how far can we get with a small number of carefully chosen examples, and without touching most of the model?
 
@@ -30,6 +34,10 @@ The more interesting result, to us, is the comparison with general truck data. W
 ## Steer
 
 The action expert builds a trajectory in a series of small steps, starting from noise and refining it a little each time. The second part of the paper adds a small module that we call Flow Velocity Steering, which nudges each of those steps while the fine-tuned model stays frozen.
+
+If you've seen an image generator start from static and sharpen it into a picture, it's the same idea, except that what's being sharpened is a path.
+
+![The action expert starts from noise and refines the path a little at each step, and the steering module adds a small correction to every step](steps.svg)
 
 It's a correction that's added on top, with a single strength setting, and turning that setting to zero gives back exactly the model from the first stage. Since each nudged step is fed back into the model for the next one, a small correction early on carries through the rest of the trajectory. It's trained on the same logged examples, so it needs no extra data.
 

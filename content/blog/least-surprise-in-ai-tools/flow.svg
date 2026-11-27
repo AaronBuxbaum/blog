@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" width="640" height="250" role="img" aria-labelledby="t">
+  <title id="t">A narrow AI feature: the model only fills in a schema, and plain code checks it, previews it, and does the work</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
+    </marker>
+    <style>
+      text { font-family: monospace; font-size: 13px; fill: #222; }
+      .small { font-size: 11px; fill: #555; }
+      .box { fill: #fff; stroke: #222; stroke-width: 1.5; }
+      .blue { fill: #eef3fb; }
+      .orange { fill: #fdf1e3; }
+      .grey { fill: #f1f1f1; }
+      .barb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .baro { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+      .barg { fill: #d9d9d9; stroke: #222; stroke-width: 1.2; }
+      .line { fill: none; stroke: #222; stroke-width: 1.5; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #222; stroke-width: 1.5; }
+      .thin { fill: none; stroke: #bbb; stroke-width: 1; }
+      .dash { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .dasharrow { fill: none; stroke: #777; stroke-width: 1.2; stroke-dasharray: 4 3; marker-end: url(#arrowg); }
+      .curveb { fill: none; stroke: #4a78b8; stroke-width: 2.5; }
+      .curveo { fill: none; stroke: #d98a2b; stroke-width: 2.5; }
+      .dotb { fill: #9db8e0; stroke: #222; stroke-width: 1.2; }
+      .doto { fill: #f0b775; stroke: #222; stroke-width: 1.2; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="250" fill="#fff"/>
+  <rect class="box" x="2" y="50" width="114" height="60" rx="4"/>
+  <text x="59.0" y="77.0" text-anchor="middle">one job</text>
+  <text class="small" x="59.0" y="93.0" text-anchor="middle">a narrow button</text>
+  <rect class="box orange" x="132" y="50" width="114" height="60" rx="4"/>
+  <text x="189.0" y="77.0" text-anchor="middle">model</text>
+  <text class="small" x="189.0" y="93.0" text-anchor="middle">fills a schema</text>
+  <rect class="box blue" x="262" y="50" width="114" height="60" rx="4"/>
+  <text x="319.0" y="77.0" text-anchor="middle">check it</text>
+  <text class="small" x="319.0" y="93.0" text-anchor="middle">plain code</text>
+  <rect class="box" x="392" y="50" width="114" height="60" rx="4"/>
+  <text x="449.0" y="77.0" text-anchor="middle">preview</text>
+  <text class="small" x="449.0" y="93.0" text-anchor="middle">user confirms</text>
+  <rect class="box blue" x="522" y="50" width="114" height="60" rx="4"/>
+  <text x="579.0" y="77.0" text-anchor="middle">do it</text>
+  <text class="small" x="579.0" y="93.0" text-anchor="middle">plain code</text>
+  <path class="line" d="M 116.0 80.0 L 130.0 80.0"/>
+  <path class="line" d="M 246.0 80.0 L 260.0 80.0"/>
+  <path class="line" d="M 376.0 80.0 L 390.0 80.0"/>
+  <path class="line" d="M 506.0 80.0 L 520.0 80.0"/>
+  <path class="dasharrow" d="M 319 110 L 319 150"/>
+  <text class="small" x="327.0" y="136.0" text-anchor="start">nothing found?</text>
+  <rect class="box grey" x="262" y="152" width="114" height="50" rx="4"/>
+  <text x="319.0" y="174.0" text-anchor="middle">say so</text>
+  <text class="small" x="319.0" y="190.0" text-anchor="middle">no made-up value</text>
+  <rect class="baro" x="150.0" y="226.0" width="14.0" height="14.0"/>
+  <text class="small" x="170.0" y="238.0" text-anchor="start">the model</text>
+  <rect class="barb" x="280.0" y="226.0" width="14.0" height="14.0"/>
+  <text class="small" x="300.0" y="238.0" text-anchor="start">plain code</text>
+  <rect class="box" x="410.0" y="226.0" width="14.0" height="14.0"/>
+  <text class="small" x="430.0" y="238.0" text-anchor="start">the user</text>
+</svg>

@@ -14,6 +14,44 @@ I think it's worth finishing now, because the economics around the quote have ch
 
 Ask a coding agent for a small feature, and there's a good chance that it comes back with more than was asked for. There will be error handling for cases that can't happen, options that nobody requested, and a helper module for something that's used once. None of it is wrong, exactly. It all looks careful and professional, which is the problem.
 
+Here's the kind of thing I mean. Ask for a function that formats a price, and it's common to get back something like this:
+
+```
+type FormatPriceOptions = {
+  currency?: string;
+  locale?: string;
+  fallback?: string;
+};
+
+export function formatPrice(
+  cents: number | null | undefined,
+  options: FormatPriceOptions = {},
+) {
+  const { currency = "USD", locale = "en-US", fallback = "-" } = options;
+
+ if (cents === null || cents === undefined || Number.isNaN(cents)) {
+    return fallback;
+  }
+
+ try {
+    return new Intl.NumberFormat(locale, { style: "currency", currency }).format(cents / 100);
+  } catch (error) {
+    console.error("Failed to format price", error);
+    return fallback;
+  }
+}
+```
+
+If every price in the app is a number of cents in US dollars, this is the whole job:
+
+```
+const usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+
+export const formatPrice = (cents: number) => usd.format(cents / 100);
+```
+
+The first version isn't wrong. It has three options that nobody asked for, a check for a `null` that no caller ever passes, and a `try` around an error that only shows up for a currency code we never pass. Each of those is something that a reviewer has to read, and that the next change has to keep working.
+
 > "There are two ways of constructing a software design: one way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies."
 > _Tony Hoare_
 
@@ -26,7 +64,11 @@ The second half of his quote has aged well, too. Complexity still sells better. 
 > "Simplicity is prerequisite for reliability."
 > _Edsger Dijkstra_
 
-The cost of complexity was never really in the writing. It's in everything that comes afterwards: every line has to be read by a reviewer, understood by whoever debugs it, and worked around by whoever changes it next. Those costs haven't moved. In [AI Has Tradeoffs Too](/ai-has-tradeoffs-too/), I pointed out that a codebase can now grow much faster than our understanding of it, and a system that nobody understands is not going to be a reliable one.
+The cost of complexity was never really in the writing. It's in everything that comes afterwards: every line has to be read by a reviewer, understood by whoever debugs it, and worked around by whoever changes it next. Those costs haven't moved.
+
+![The life of a line of code: an agent shrinks the writing, but reviewing, debugging, and changing cost what they always did](life.svg)
+
+In [AI Has Tradeoffs Too](/ai-has-tradeoffs-too/), I pointed out that a codebase can now grow much faster than our understanding of it, and a system that nobody understands is not going to be a reliable one.
 
 There's an argument that this doesn't matter anymore, since the agent can read the complicated code for us. I don't find it convincing. Agents get lost in a tangled codebase in much the same way that people do: they miss the one place where the rule is different, or they add a fourth way of doing something because they didn't find the first three. Simple code is easier for a model to work with for the same reasons that it's easier for a person.
 

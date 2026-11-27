@@ -47,9 +47,19 @@ for (const { input, expected } of cases) {
 
 That's the whole idea, and you don't need a framework to get started. What counts as passing is up to you. For something like a due date, I'd want ten out of ten, and a nine is a bug. For something softer, like the tone of a summary, a lower bar might be fine, as long as we know what it is and notice when it drops.
 
+It's worth knowing what ten out of ten actually tells us, though, because it's less than it sounds like. If a case really fails one time in twenty, it will still pass all ten runs about 60% of the time (0.95 to the tenth power). A clean run is good news, but it isn't proof.
+
+![The chance that a case passes ten runs out of ten, by how often it really passes](confidence.svg)
+
+A handy rule of thumb here is the _rule of three_: if a case passes n runs in a row, we can be about 95% sure that its real failure rate is below 3/n. Ten clean runs only rules out failure rates above about 30%. Thirty clean runs gets that down to 10%, and a hundred gets it to 3%. So, for the handful of cases that really matter (money, dates, anything a user will act on without checking), I run them a lot more than ten times.
+
 The second difference is that checking the output can be hard. A date either matches or it doesn't, but there's no `===` for "is this a good summary?" I try to turn as much as possible into checks that plain code can do: is it under 100 words, does it mention the customer's name, is it valid JSON, does it avoid promising a refund. This is one more reason to have the model [fill in a shape](/least-surprise-in-ai-tools/) instead of writing a paragraph, since a shape is far easier to test. For what's left over, you can ask a second model to grade the output against a short rubric. That works reasonably well, but the grader is a model too, so I read a sample of its grades by hand every so often to make sure I still agree with it.
 
 The third difference is that evals are slow and they cost money. Unit tests run in milliseconds for free, and a few hundred model calls don't. I keep a small set that runs on every prompt change, and a bigger one that runs before a release or a model upgrade. If that sounds familiar, it's the same split as unit tests and end-to-end tests.
+
+Put together with the bug-fixing rule from earlier, the whole loop looks like this:
+
+![A bad output becomes an eval case first, the small set runs on every prompt change, and the big set runs before a release](loop.svg)
 
 ## Watch out for overfitting
 

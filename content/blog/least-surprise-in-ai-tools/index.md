@@ -21,7 +21,7 @@ There's no single trick here, but a few things have made the biggest difference 
 
 First, I keep the job narrow. An "ask me anything" box is the most surprising interface you can build, since the user has no way of knowing what will work. A button that says "Summarize this thread" sets an expectation the user can actually check. It's tempting to build the general version first because it demos better, but I've had much better luck starting narrow and widening it once people ask for more.
 
-Second, I show the work before doing the work. If the tool is going to change something (send an email, edit a file, update a record), it should show what it's about to do and let the user confirm. A diff is a lot less surprising than a finished result, and it's much easier to check.
+Second, I show the work before doing the work. If the tool is going to change something (send an email, edit a file, update a record), it should show what it's about to do and let the user confirm. A diff is a lot less surprising than a finished result, and it's much easier to check. For example, "Done! I updated 14 records" is a surprise, even when it's right. "This will change the owner on these 14 records", with the list and a button, is not.
 
 Third, I try to get the model to fill in a shape instead of writing a paragraph. If the output is a table, a form, or a single field, the user can scan it in a second, and the model has a lot less room to wander. Most model APIs support structured output now, so this is usually as simple as passing a schema:
 
@@ -38,7 +38,24 @@ const schema = {
 
 Note the `null`s. This leads into the fourth point: when the model can't find something, it should say so. "We couldn't find a due date in this document" is far better than a made-up due date, and giving the model an explicit way to say "I don't know" goes a long way.
 
-Finally, I test for consistency and not only for correctness. I run the same input through a feature a few dozen times and look at the spread of the results. If a user would be surprised by the difference between two runs, I treat it as a bug, even if both answers are technically right. Anything the user relies on being the same every time (formatting, units, which account gets charged) should be plain old code and not left up to the model at all.
+Put together, the model ends up with a pretty small job. It fills in the shape, and plain code does everything around it: checking what came back, showing the preview, and making the actual change.
+
+![A narrow feature where the model only fills in a schema, and plain code checks, previews, and does the work](flow.svg)
+
+Finally, I test for consistency and not only for correctness. I run the same input through a feature a few dozen times and look at the spread of the results. If a user would be surprised by the difference between two runs, I treat it as a bug, even if both answers are technically right. This doesn't take anything fancy:
+
+```
+const outputs = new Map();
+
+for (let i = 0; i < 30; i++) {
+  const result = JSON.stringify(await extractFields(input));
+  outputs.set(result, (outputs.get(result) ?? 0) + 1);
+}
+
+console.log(outputs);
+```
+
+If the map has one entry, great. If it has five, then a user who runs the same document twice is going to see two different answers, and that's exactly the kind of surprise that sends people back to doing it by hand. Anything the user relies on being the same every time (formatting, units, which account gets charged) should be plain old code and not left up to the model at all.
 
 ## The demo is the easy part
 
